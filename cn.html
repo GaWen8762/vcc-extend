@@ -10,597 +10,822 @@
     <link rel="stylesheet" href="static/css/swiper.min.css" type="text/css">
     <link href="static/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
-	<link rel="shortcut icon" href="/static/image/logo.webp">
-
+    <link rel="shortcut icon" href="/static/image/logo.webp">
 
 
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
-    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
-        <div class="container-fluid custom-container">
-            <a class="navbar-brand logo text-uppercase" href="javascript:;">
-                <img alt="logo" src="static/image/logo.webp" class="logo-light" style="height: 35px;">
-            </a>
-            <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button>
+<nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+    <div class="container-fluid custom-container">
+        <a class="navbar-brand logo text-uppercase" href="javascript:;">
+            <img alt="logo" src="static/image/logo.webp" class="logo-light" style="height: 35px;">
+        </a>
+        <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+            <i class="mdi mdi-menu"></i>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav  navbar-center">
+                <li class="nav-item active">
+                    <a href="#home" class="nav-link active" onclick="toggleClass(event)">网站首页</a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover">
+                    <a href="#service" class="nav-link " onclick="toggleClass(event)">服务</a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover">
+                    <a href="#advantages" class="nav-link " onclick="toggleClass(event)">优势</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link" onclick="toggleClass(event)">定价</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq" class="nav-link" onclick="toggleClass(event)">常见问题</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" onclick="toggleClass(event)">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#subscribe" class="nav-link" onclick="toggleClass(event)">联系我们</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-menu list-inline d-flex align-items-center mb-0 order-1">
+            <div class="list-inline-item dropdown language me-4">
+                <a href="#" class="header-item" id="userdropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img width="24" height="24" alt="en" src="/static/image/cn.png"> <span>简体中文</span><span
+                        style="color:#666;font-size:8px;font-weight:bold;">▼</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
+                    <li><a class="dropdown-item" href="/index.html"><img width="24" height="24" alt="en"
+                                                                         src="/static/image/en.png"> English</a></li>
+                    <li><a class="dropdown-item" href="/cn.html"><img width="24" height="24" alt="en"
+                                                                      src="/static/image/cn.png"> 简体中文</a></li>
+                </ul>
+            </div>
+            <div class="Account " style="margin-left: 30px;">
                 <ul class="navbar-nav  navbar-center">
-                    <li class="nav-item active">
-                        <a href="#home" class="nav-link active" onclick="toggleClass(event)">网站首页</a>
-                    </li>
-                    <li class="nav-item dropdown dropdown-hover">
-                        <a href="#service" class="nav-link " onclick="toggleClass(event)">服务</a>
-                    </li>
-					<li class="nav-item dropdown dropdown-hover">
-                        <a href="#advantages" class="nav-link " onclick="toggleClass(event)">优势</a>
+                    <li class="nav-item">
+                        <a href="https://web.vcc.center/login" class="nav-link active" onclick="toggleClass(event)">登录</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#pricing" class="nav-link" onclick="toggleClass(event)">定价</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#faq" class="nav-link" onclick="toggleClass(event)">常见问题</a>
-                    </li>
-					 <li class="nav-item">
-                        <a href="#about" class="nav-link" onclick="toggleClass(event)">关于我们</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#subscribe" class="nav-link" onclick="toggleClass(event)">联系我们</a>
+                        <a href="https://web.vcc.center/login" class="nav-link active" onclick="toggleClass(event)">注册</a>
                     </li>
                 </ul>
             </div>
-            <div class="header-menu list-inline d-flex align-items-center mb-0 order-1">
-                <div class="list-inline-item dropdown language me-4">
-                    <a href="#" class="header-item" id="userdropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img width="24" height="24" alt="en" src="/static/image/cn.png"> <span>简体中文</span><span style="color:#666;font-size:8px;font-weight:bold;">▼</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
-                        <li><a class="dropdown-item" href="/index.html"><img width="24" height="24" alt="en" src="/static/image/en.png"> English</a></li>
-                        <li><a class="dropdown-item" href="/cn.html"><img width="24" height="24" alt="en" src="/static/image/cn.png"> 简体中文</a></li>
-                    </ul>
-                </div>
-                <div class="Account " style="margin-left: 30px;">
-                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        ppay71845@gmail.com
-                    </a>
-
-                </div>
-            </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
-    <section class="home" id="home" style="background-color: #f5f6fa;">
-        <div class="container" id="ani-round">
-            <div class="home-content">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="title mt-5 mt-lg-0 item2">
-                           支持全球支付
-                        </div>
-                        <p class="f-16 my-4 text-muted">VCC将VISA、Mastercard两大信用卡机构整合为虚拟信用卡发卡平台；<br>
-                            专业定位，为企业客户及代理客户提供优质服务；拥有最全面的发卡机构资源；持有多达20
-多类卡仓；持有全球多币种结算；目前持有的多样化消费场景总数超过680
-个；全面覆盖电商、广告、游戏、娱乐、购物、影视、服务器等消费领域，
-满足全球各类消费场景客户的需求。</p>
-                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary"></i>
-                            联系我们</a>
-                        <div class="get-link mt-4">
-                            <a  class="text-primary font-weight-600 f-14"><span class="text-muted font-weight-500">支持消费场景</span><span>使用虚拟卡简单高效的完成你的支付，简易的注册、多元的场景、更少的限制、广泛的用途，我们可以协助你更多。</span> </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-5">
-                        <div class="animation-image" >
-                            <div class="main-image mt-5 mt-lg-0 ms-lg-5 position-relative">
-                                <img src="static/image/banner-card3.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-	    <section class="section " >
-        <div class="container">
-            <div class="row align-items-center" id="part1">
-                <div class="col-lg-7">
-                    <div class="sec-image position-relative " id="sec-image">
-                        <div class="bg-img overflow-hidden border-radius">
-                            <img src="static/image/img3.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
-				    <div class="mb-3 item2">核心业务</div>
-                    <div class="text-muted fw-normal"><span class="fw-bold"></span></div>
-                    <p class="mt-3"><span class="text-primary fw-normal">√</span>支持超过200种知名商家线上支付</p>
-					<p class="mt-3"><span class="text-primary fw-normal">√</span>Facebook ads、Google ads 、绑定Paypal</p>
-					<p class="mt-3"><span class="text-primary fw-normal">√</span>接收OTP验证、3D验证</p>
-					<p class="mt-3"><span class="text-primary fw-normal">√</span>特殊卡片支持无限退款</p>
-					<p class="mt-3"><span class="text-primary fw-normal">√</span>免去繁琐的实名认证，无需复杂流程</p>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section class="section bg-light" id="service">
-        <div class="container">
-            <div class="row justify-content-center mb-4 pb-2">
-                <div class="col-lg-6">
-                    <div class="heading text-center">
-                        <div class="mb-3 item2">我们的服务
-                        </div>
-                        <p class="text-muted para-p mx-auto mb-0">全面覆盖消费场景的虚拟信用卡平台</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">跨境电子商务</div>
-                        <p style="height:60px;">Shopify ､亚马逊 ､ebay ､速卖通 ､淘宝</p>
-                        <div class="button-link mt-2">
-                           <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">广告流量</div>
-                        <p style="height:60px;">Facebook 广告 ､ Google 广告､ Instagram 广告､ Tiktok 广告､ Telegram 广告</p>
-                        <div class="button-link mt-2">
-                           <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">人工智能</div>
-                        <p style="height:60px;">OpenAI､Claude､ChatBase､Perplexity､Gemini</p>
-                        <div class="button-link mt-2">
-                           <a  href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
-                        </div>
-                    </div>
-                </div>
-				                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">影视娱乐</div>
-                        <p style="height:60px;">YouTube､Netflix､imdb､disneyplus､kwai-video</p>
-                        <div class="button-link mt-2">
-                           <a  href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">旅游美食</div>
-                        <p style="height:60px;">Airbnb､ Tripadvisor､ Zomato､ Yelp､ 迷恋</p>
-                        <div class="button-link mt-2">
-                           <a  href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">支付工具</div>
-                        <p style="height:60px;">PayPal､支付宝､GooglePay､Skrill､Stripe､Payoneer</p>
-                        <div class="button-link mt-2">
-                           <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section " >
-        <div class="container">
-            <div class="row align-items-center" id="part1">
-                <div class="col-lg-7">
-                    <div class="sec-image position-relative " id="sec-image">
-                        <div class="bg-img overflow-hidden border-radius">
-                            <img src="static/image/cj3.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
-				    <div class="mb-3 item2">数字时代的全球信用卡支付解决方案</div>
-                    <div class="text-muted fw-normal"><span class="fw-bold">以客户为中心</span></div>
-                    <p class="mt-3">客户是我们一切工作的核心，我们致力于为他们提供灵活、可靠和安全的支付方式。</p>
-                    <div class="text-muted fw-normal"><span class="fw-bold">创新与科技</span></div>
-                    <p class="mt-3">我们致力于投资尖端技术和创新解决方案，为客户提供最佳的支付体验。</p>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-<section class="section bg-light" id="advantages">
-        <div class="container">
-            <div class="row justify-content-center mb-4 pb-2">
-                <div class="col-lg-6">
-                    <div class="heading text-center">
-                        <div class="mb-3 item2">我们的优势
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 mt-3 pt-2">
-                    <div class="service-box text-center text-lg-start">
-                        <div class="service-image">
-                            <img alt="1101" src="static/image/1101.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">交易安全</div>
-                        <p style="height:60px;">国际PCI DSS认证<br>
-全面客制化风控配置</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-3 pt-2">
-                    <div class="service-box text-center text-lg-start">
-                        <div class="service-image">
-                            <img alt="1102" src="static/image/1102.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">卡段丰富</div>
-                        <p style="height:60px;">多个号段<br>
-满足多样交易场景需求</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-3 pt-2">
-                    <div class="service-box text-center text-lg-start">
-					<div class="service-image">
-                            <img alt="1103" src="static/image/1103.svg" style="width: 50px;">
-                        </div>
-                       <div class="fw-bold mt-4 mb-3 item">高效开卡</div>
-                        <p style="height:60px;">秒开卡<br>
-一次开多张</p>
-
-                    </div>
-                </div>
-				                <div class="col-lg-3 mt-3 pt-2">
-                    <div class="service-box text-center text-lg-start">
-                       <div class="service-image">
-                            <img alt="1104" src="static/image/1104.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">多币种卡</div>
-                        <p style="height:60px;">USD、HKD、GBP币种卡片<br>
-满足特定币种支付需求，降低汇损</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-3 pt-2">
-                    <div class="service-box text-center text-lg-start">
-                       <div class="service-image">
-                            <img alt="1105" src="static/image/1105.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">场景多样</div>
-                        <p style="height:60px;">线上多场景<br>
-多平台消费</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-3 pt-2">
-                    <div class="service-box text-center text-lg-start">
-                        <div class="service-image">
-                            <img alt="1106" src="static/image/1106.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">技术可靠</div>
-                        <p style="height:60px;">API对接<br>
-服务平台开卡</p>
-                    </div>
-                </div>
-				<div class="col-lg-3 mt-3 pt-2">
-                    <div class="service-box text-center text-lg-start">
-                        <div class="service-image">
-                            <img alt="1107" src="static/image/1107.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">对账清晰</div>
-                        <p style="height:60px;">线上多卡统一管理<br>
-在线对账收支清晰</p>
-                    </div>
-                </div>
-				<div class="col-lg-3 mt-3 pt-2">
-                    <div class="service-box text-center text-lg-start">
-                        <div class="service-image">
-                            <img alt="1108" src="static/image/1108.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">客户咨询</div>
-                        <p style="height:60px;">工作日全天服务<br>
-保证客户用卡无忧</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	<section class=" section" id="cta-ani">
-        <div class="cta-image position-relative">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="text-center">
-						  <div class="mt-3 fw-bold item2">选择 USDT 进行帐户储值</div>
-                            <div class="text-dark item">你可以使用USDT对你的帐户进行充值，该充值方式的费用非常的低，透过我们的快速回应系统，USDT的充值方式提供24小时的充值服务，并且USDT充值方式在3分钟内即可到达你的帐户。 </div>
-
-                            <a href="https://t.me/LKJ118" target="_blank" class=" btn-lg btn-primary mt-4 f-14">联系我们</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section bg-light" id="pricing">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="text-center">
-                        <div class="mb-3 item2">价格</div>
-                        <p class="text-muted para-p mx-auto mb-0">VCC 提供全面的虚拟信用卡发行和管理服务，旨在推动您的全球业务增长。我们不仅提供全套功能服务，还提供业内有竞争力的价格。以下费用根据您的消费量计算；消费量越高，费用越低。</p>
-                    </div>
-                </div>
-            </div>
+<section class="home" id="home" style="background-color: #f5f6fa;">
+    <div class="container" id="ani-round">
+        <div class="home-content">
             <div class="row align-items-center">
-                <div class="col-lg-4  mt-5">
-                    <div class="pricing-box box-shadow p-4 border-radius">
-                        <div class="text-center mb-4">
-                            <div class="text-primary">每月累计消费3,000-10,000美元</div>
-                            <div class="price-title mt-2">
-                                <div class="tag"></div>
-                                <div class="mb-0 text-white">发卡费</div>
-                            </div>
-                            <div class="price-tag mt-4">
-                                <h2><sup>$</sup><span class="text-primary">2.5</span></h2>
-                            </div>
-                            <div class="detail mt-4">
-                                <p><span class="text-primary icon me-2">∎</span>月费/年费：0 美元</p>
-                                <p><span class="text-primary icon me-2">∎</span>充值费：4.5% 美元</p>
-                                <p><span class="text-primary icon me-2">∎</span>单笔交易限额：50,000美元</p>
-								<p><span class="text-primary icon me-2">∎</span>年度消费限额：20万美元</p>
-								<p><span class="text-primary icon me-2">∎</span>卡片有效期：2-3年</p>
-                            </div>
-
-                        </div>
-                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">立即开始</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4  mt-5">
-                    <div class="pricing-box box-shadow p-4 border-radius">
-                        <div class="text-center mb-4">
-                            <div class="text-primary">每月累计消费1-5万美元</div>
-                            <div class="price-title mt-2">
-                                <div class="tag"></div>
-                                <div class="mb-0 text-white">发卡费</div>
-                            </div>
-                            <div class="price-tag mt-4">
-                                <h2><sup>$</sup><span class="text-primary">2</span></h2>
-                            </div>
-
-                            <div class="detail mt-4">
-                                <p><span class="text-primary icon me-2">∎</span>月费/年费：0 美元</p>
-                                <p><span class="text-primary icon me-2">∎</span>充值费：4% 美元</p>
-                                <p><span class="text-primary icon me-2">∎</span>单笔交易限额：50,000美元</p>
-								<p><span class="text-primary icon me-2">∎</span>年度消费限额：20万美元</p>
-								<p><span class="text-primary icon me-2">∎</span>卡片有效期：2-3年</p>
-                            </div>
-
-                        </div>
-                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">立即开始</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4  mt-5">
-                    <div class="pricing-box box-shadow p-4 border-radius">
-                        <div class="text-center mb-4">
-                            <div class="text-primary">每月累计消费5-10万美元</div>
-                            <div class="price-title mt-2">
-                                <div class="tag"></div>
-                                <div class="mb-0 text-white">发卡费</div>
-                            </div>
-                            <div class="price-tag mt-4">
-                                <h2><sup>$</sup><span class="text-primary">1.7</span></h2>
-                            </div>
-
-                            <div class="detail mt-4">
-                                <p><span class="text-primary icon me-2">∎</span>月费/年费：0 美元</p>
-                                <p><span class="text-primary icon me-2">∎</span>充值费：3% 美元</p>
-                                <p><span class="text-primary icon me-2">∎</span>单笔交易限额：50,000美元</p>
-                                <p><span class="text-primary icon me-2">∎</span>年度消费限额：20万美元</p>
-                                <p><span class="text-primary icon me-2">∎</span>卡片有效期：2-3年</p>
-                            </div>
-
-                        </div>
-                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">立即开始</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section faq" id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-box text-center">
-                        <div class="mb-3 item2">常见问题</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center">
                 <div class="col-lg-6">
-                    <div class="accordion mt-5" id="accordionExample">
-                        <div class="faq-collaps faq-collaps-2">
-                            <div class="card mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse1" class="faq collapsed">
-                                    <div class="card-header p-4" id="heading1">
-                                        <div class="mb-0 text-dark item">什么是虚拟卡?</div>
-                                    </div>
-                                </a>
-                                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
-                                    <div class="card-body pt-1">
-                                        <p class="mb-0 text-muted">虚拟卡是一种可用于在线交易的数字卡。这是一种安全便捷的付款方式，无需实体卡。
-                                            .</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse2" class="faq collapsed">
-                                    <div class="card-header p-4" id="heading2">
-                                        <div class="mb-0 text-dark item">你们支持哪些货币？</div>
-                                    </div>
-                                </a>
-                                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
-                                    <div class="card-body pt-1">
-                                        <p class="mb-0 text-muted">我们支持多种货币，包括美元、欧元、英镑和日元。我们不断扩大支持的货币列表，以更好地满足客户的需求。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse3" class="faq collapsed">
-                                    <div class="card-header p-4" id="heading3">
-                                        <div class="mb-0 text-dark item">如何申请虚拟卡？</div>
-                                    </div>
-                                </a>
-                                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
-                                    <div class="card-body pt-1">
-                                        <p class="mb-0 text-muted">您可以通过我们的网站在线申请虚拟卡。申请流程快捷简单，批准后您将立即收到您的卡详细信息。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse4" class="faq collapsed" aria-expanded="false" aria-controls="collapse4">
-                                    <div class="card-header p-4" id="heading4">
-                                        <div class="mb-0 text-dark item">如何为我的账户注资？</div>
-                                    </div>
-                                </a>
-                                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
-                                    <div class="card-body pt-1">
-                                        <p class="mb-0 text-muted">您可以使用多种方式为您的账户注资，包括银行转账、信用卡和借记卡。我们支持多种货币，因此您可以选择最适合您需求的货币。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="title mt-5 mt-lg-0 item2">
+                        支持全球支付
+                    </div>
+                    <p class="f-16 my-4 text-muted">VCC将VISA、Mastercard两大信用卡机构整合为虚拟信用卡发卡平台；<br>
+                        专业定位，为企业客户及代理客户提供优质服务；拥有最全面的发卡机构资源；持有多达20
+                        多类卡仓；持有全球多币种结算；目前持有的多样化消费场景总数超过680
+                        个；全面覆盖电商、广告、游戏、娱乐、购物、影视、服务器等消费领域，
+                        满足全球各类消费场景客户的需求。</p>
+                    <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary"></i>
+                        联系我们</a>
+                    <div class="get-link mt-4">
+                        <a class="text-primary font-weight-600 f-14"><span
+                                class="text-muted font-weight-500">支持消费场景</span><span>使用虚拟卡简单高效的完成你的支付，简易的注册、多元的场景、更少的限制、广泛的用途，我们可以协助你更多。</span>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="static/picture/Questions2.png" alt="" class="img-fluid">
-                </div>
-            </div>
-
-        </div>
-    </section>
-     <section class="cta section" id="about">
-        <div class="cta-image position-relative">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="text-center">
-						  <div class="mt-3 fw-bold item2">关于我们</div>
-                            <div class="text-dark item" style="line-height: 1.9;">&nbsp;&nbsp;&nbsp;&nbsp;VCC是领先的虚拟信用卡发行平台；与国际发卡机构合作推出的虚拟卡服务；致力于为企业和个人提供安全、高效、便捷的支付解决方案。我们专注于利用最先进的技术 集成技术；非传统的支付方式；帮助用户在数字经济时代获得无缝的支付体验 致力于创新集成技术；提供更安全、更高效的支付解决方案；协助用户在数字经济时代轻松实现支付自由。VCC将不断追求卓越；不断优化产品和服务；成为用户值得信赖的支付合作伙伴</span> </div>
-
+                <div class="col-lg-6 mt-5">
+                    <div class="animation-image">
+                        <div class="main-image mt-5 mt-lg-0 ms-lg-5 position-relative">
+                            <img src="static/image/banner-card3.png" alt="" class="img-fluid">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="subscribe" class="section cta-2">
-        <div class="cta-image position-relative " id="cta-footer">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="text-center">
-                            <div class="fw-bold item2">使用 VCC 轻松实现全球支付</span>
-                            </div>
-
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <form class="subscribe-form mt-4" action="#">
-                                        <div class="input-group justify-content-center">
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="电子邮箱">
-                                            <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary" type="button" id="subscribebtn" style="padding: 20px 30px;">订阅</a>
-                                        </div>
-                                        <p class="f-14 mt-2">邮件订阅成功后，最新活动消息以邮件的方式通知</p>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="footer py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="address-content">
-                        <div class="text-black item">迪塔布兰卡特有限责任公司</div>
-						<ul class="menu list-unstyled mt-3">
-                        <li class="menu-item"><i class="mdi mdi-telegram f-20"></i> 电报:<a href="https://t.me/LKJ118">@LKJ118</a></li>
-						 <li class="menu-item"></li>
-                        <li class="menu-item"><i class="mdi mdi-telegram f-20"></i> 双向机器人:<a href="https://t.me/LKJ11888_bot">@LKJ11888_bot</a></li>
-						 <li class="menu-item"></li>
-                        <li class="menu-item"><i class="mdi mdi-email f-20"></i> 电子邮件:<a>ppay71845@gmail.com</a></li>
-                    </ul>
-                    </div>
-                    <div class="social-icon d-flex mt-4 mb-4 mb-lg-0">
-                        <div class="facebook">
-<!--                            <a href="cn.html"><i class="mdi mdi-facebook-box f-30"></i></a>-->
-                            <i class="mdi mdi-facebook-box f-30"></i>
-                        </div>
-                        <div class="twitter ms-4">
-<!--                            <a href="cn.html"><i class="mdi mdi-twitter f-30"></i></a>-->
-                            <i class="mdi mdi-twitter f-30"></i>
-                        </div>
-                        <div class="twitter ms-4">
-<!--                            <a href="cn.html"><i class="mdi mdi-instagram f-30"></i></a>-->
-                            <i class="mdi mdi-instagram f-30"></i>
-                        </div>
-                        <div class="twitter ms-4">
-<!--                            <a href="cn.html"><i class="mdi mdi-linkedin-box f-30"></i></a>-->
-                            <i class="mdi mdi-linkedin-box f-30"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="text-black item">运营工作时间</div>
-                    <ul class="menu list-unstyled mt-3">
-                        <li class="menu-item">周一至周三：上午 9 点至下午 4 点</li>
-						 <li class="menu-item"></li>
-                        <li class="menu-item">周四 - 周五：上午 9 点至下午 5 点</li>
-						 <li class="menu-item"></li>
-                        <li class="menu-item">周末：休息</li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="copy-right mb-5 text-center text-muted">Copyright &copy; 2024.VCC All rights reserved.</div>
-                    <div class="copy-right mb-3 text-center text-muted" style="font-size: 12px">
-                        Facebook和Facebook標誌是Meta Platforms, Inc在美國及其他國家和地區註冊的商標。Google、Google Ads和Google標誌是Google, LLC.在美國及其他國家和地區註冊的商標， Paypal和Paypal商标是Paypal,Inc在美国和其他国家地区注册的商标。VCC的解決方案可能不適用於所有客戶。條款和條件適用並可能會變更。Visa是Visa, U.S.A. Inc的註冊商標。所有其他商標和服務標誌均屬該所有者。Mastercard是一個註冊商標，圓圈設計是Mastercard International Incorporated的商標。
                     </div>
                 </div>
             </div>
         </div>
     </div>
-	<script>
+
+</section>
+<section class="section ">
+    <div class="container">
+        <div class="row align-items-center" id="part1">
+            <div class="col-lg-7">
+                <div class="sec-image position-relative " id="sec-image">
+                    <div class="bg-img overflow-hidden border-radius">
+                        <img src="static/image/img3.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
+                <div class="mb-3 item2">核心业务</div>
+                <div class="text-muted fw-normal"><span class="fw-bold"></span></div>
+                <p class="mt-3"><span class="text-primary fw-normal">√</span>支持超过200种知名商家线上支付</p>
+                <p class="mt-3"><span class="text-primary fw-normal">√</span>Facebook ads、Google ads 、绑定Paypal</p>
+                <p class="mt-3"><span class="text-primary fw-normal">√</span>接收OTP验证、3D验证</p>
+                <p class="mt-3"><span class="text-primary fw-normal">√</span>特殊卡片支持无限退款</p>
+                <p class="mt-3"><span class="text-primary fw-normal">√</span>免去繁琐的实名认证，无需复杂流程</p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="section bg-light" id="service">
+    <div class="container">
+        <div class="row justify-content-center mb-4 pb-2">
+            <div class="col-lg-6">
+                <div class="heading text-center">
+                    <div class="mb-3 item2">我们的服务
+                    </div>
+                    <p class="text-muted para-p mx-auto mb-0">全面覆盖消费场景的虚拟信用卡平台</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">跨境电子商务</div>
+                    <p style="height:60px;">Shopify ､亚马逊 ､ebay ､速卖通 ､淘宝</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">广告流量</div>
+                    <p style="height:60px;">Facebook 广告 ､ Google 广告､ Instagram 广告､ Tiktok 广告､ Telegram 广告</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">人工智能</div>
+                    <p style="height:60px;">OpenAI､Claude､ChatBase､Perplexity､Gemini</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">影视娱乐</div>
+                    <p style="height:60px;">YouTube､Netflix､imdb､disneyplus､kwai-video</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">旅游美食</div>
+                    <p style="height:60px;">Airbnb､ Tripadvisor､ Zomato､ Yelp､ 迷恋</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">支付工具</div>
+                    <p style="height:60px;">PayPal､支付宝､GooglePay､Skrill､Stripe､Payoneer</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">开始使用</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section ">
+    <div class="container">
+        <div class="row align-items-center" id="part1">
+            <div class="col-lg-7">
+                <div class="sec-image position-relative " id="sec-image">
+                    <div class="bg-img overflow-hidden border-radius">
+                        <img src="static/image/cj3.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
+                <div class="mb-3 item2">数字时代的全球信用卡支付解决方案</div>
+                <div class="text-muted fw-normal"><span class="fw-bold">以客户为中心</span></div>
+                <p class="mt-3">客户是我们一切工作的核心，我们致力于为他们提供灵活、可靠和安全的支付方式。</p>
+                <div class="text-muted fw-normal"><span class="fw-bold">创新与科技</span></div>
+                <p class="mt-3">我们致力于投资尖端技术和创新解决方案，为客户提供最佳的支付体验。</p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="section bg-light" id="advantages">
+    <div class="container">
+        <div class="row justify-content-center mb-4 pb-2">
+            <div class="col-lg-6">
+                <div class="heading text-center">
+                    <div class="mb-3 item2">我们的优势
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 mt-3 pt-2">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1101" src="static/image/1101.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">交易安全</div>
+                    <p style="height:60px;">国际PCI DSS认证<br>
+                        全面客制化风控配置</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1102" src="static/image/1102.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">卡段丰富</div>
+                    <p style="height:60px;">多个号段<br>
+                        满足多样交易场景需求</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1103" src="static/image/1103.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">高效开卡</div>
+                    <p style="height:60px;">秒开卡<br>
+                        一次开多张</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1104" src="static/image/1104.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">多币种卡</div>
+                    <p style="height:60px;">USD、HKD、GBP币种卡片<br>
+                        满足特定币种支付需求，降低汇损</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1105" src="static/image/1105.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">场景多样</div>
+                    <p style="height:60px;">线上多场景<br>
+                        多平台消费</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1106" src="static/image/1106.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">技术可靠</div>
+                    <p style="height:60px;">API对接<br>
+                        服务平台开卡</p>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1107" src="static/image/1107.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">对账清晰</div>
+                    <p style="height:60px;">线上多卡统一管理<br>
+                        在线对账收支清晰</p>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1108" src="static/image/1108.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">客户咨询</div>
+                    <p style="height:60px;">工作日全天服务<br>
+                        保证客户用卡无忧</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class=" section" id="cta-ani">
+    <div class="cta-image position-relative">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center">
+                        <div class="mt-3 fw-bold item2">选择 USDT 进行帐户储值</div>
+                        <div class="text-dark item">
+                            你可以使用USDT对你的帐户进行充值，该充值方式的费用非常的低，透过我们的快速回应系统，USDT的充值方式提供24小时的充值服务，并且USDT充值方式在3分钟内即可到达你的帐户。
+                        </div>
+
+                        <a href="https://t.me/LKJ118" target="_blank" class=" btn-lg btn-primary mt-4 f-14">联系我们</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-light" id="pricing">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="text-center">
+                    <div class="mb-3 item2">价格</div>
+                    <p class="text-muted para-p mx-auto mb-0">VCC
+                        提供全面的虚拟信用卡发行和管理服务，旨在推动您的全球业务增长。我们不仅提供全套功能服务，还提供业内有竞争力的价格。以下费用根据您的消费量计算；消费量越高，费用越低。</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-4  mt-5">
+                <div class="pricing-box box-shadow p-4 border-radius">
+                    <div class="text-center mb-4">
+                        <div class="text-primary">每月累计消费3,000-10,000美元</div>
+                        <div class="price-title mt-2">
+                            <div class="tag"></div>
+                            <div class="mb-0 text-white">发卡费</div>
+                        </div>
+                        <div class="price-tag mt-4">
+                            <h2><sup>$</sup><span class="text-primary">2.5</span></h2>
+                        </div>
+                        <div class="detail mt-4">
+                            <p><span class="text-primary icon me-2">∎</span>月费/年费：0 美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>充值费：4.5% 美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>单笔交易限额：50,000美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>年度消费限额：20万美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>卡片有效期：2-3年</p>
+                        </div>
+
+                    </div>
+                    <a href="https://t.me/LKJ118" target="_blank"
+                       class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">立即开始</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-5">
+                <div class="pricing-box box-shadow p-4 border-radius">
+                    <div class="text-center mb-4">
+                        <div class="text-primary">每月累计消费1-5万美元</div>
+                        <div class="price-title mt-2">
+                            <div class="tag"></div>
+                            <div class="mb-0 text-white">发卡费</div>
+                        </div>
+                        <div class="price-tag mt-4">
+                            <h2><sup>$</sup><span class="text-primary">2</span></h2>
+                        </div>
+
+                        <div class="detail mt-4">
+                            <p><span class="text-primary icon me-2">∎</span>月费/年费：0 美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>充值费：4% 美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>单笔交易限额：50,000美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>年度消费限额：20万美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>卡片有效期：2-3年</p>
+                        </div>
+
+                    </div>
+                    <a href="https://t.me/LKJ118" target="_blank"
+                       class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">立即开始</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-5">
+                <div class="pricing-box box-shadow p-4 border-radius">
+                    <div class="text-center mb-4">
+                        <div class="text-primary">每月累计消费5-10万美元</div>
+                        <div class="price-title mt-2">
+                            <div class="tag"></div>
+                            <div class="mb-0 text-white">发卡费</div>
+                        </div>
+                        <div class="price-tag mt-4">
+                            <h2><sup>$</sup><span class="text-primary">1.7</span></h2>
+                        </div>
+
+                        <div class="detail mt-4">
+                            <p><span class="text-primary icon me-2">∎</span>月费/年费：0 美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>充值费：3% 美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>单笔交易限额：50,000美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>年度消费限额：20万美元</p>
+                            <p><span class="text-primary icon me-2">∎</span>卡片有效期：2-3年</p>
+                        </div>
+
+                    </div>
+                    <a href="https://t.me/LKJ118" target="_blank"
+                       class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">立即开始</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section faq" id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box text-center">
+                    <div class="mb-3 item2">常见问题</div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6">
+                <div class="accordion mt-5" id="accordionExample">
+                    <div class="faq-collaps faq-collaps-2">
+                        <div class="card mt-4">
+                            <a data-bs-toggle="collapse" href="#collapse1" class="faq collapsed">
+                                <div class="card-header p-4" id="heading1">
+                                    <div class="mb-0 text-dark item">什么是虚拟卡?</div>
+                                </div>
+                            </a>
+                            <div id="collapse1" class="collapse show" aria-labelledby="heading1"
+                                 data-parent="#accordionExample">
+                                <div class="card-body pt-1">
+                                    <p class="mb-0 text-muted">虚拟卡是一种可用于在线交易的数字卡。这是一种安全便捷的付款方式，无需实体卡。
+                                        .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-4">
+                            <a data-bs-toggle="collapse" href="#collapse2" class="faq collapsed">
+                                <div class="card-header p-4" id="heading2">
+                                    <div class="mb-0 text-dark item">你们支持哪些货币？</div>
+                                </div>
+                            </a>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2"
+                                 data-parent="#accordionExample">
+                                <div class="card-body pt-1">
+                                    <p class="mb-0 text-muted">
+                                        我们支持多种货币，包括美元、欧元、英镑和日元。我们不断扩大支持的货币列表，以更好地满足客户的需求。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-4">
+                            <a data-bs-toggle="collapse" href="#collapse3" class="faq collapsed">
+                                <div class="card-header p-4" id="heading3">
+                                    <div class="mb-0 text-dark item">如何申请虚拟卡？</div>
+                                </div>
+                            </a>
+                            <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                                 data-parent="#accordionExample">
+                                <div class="card-body pt-1">
+                                    <p class="mb-0 text-muted">
+                                        您可以通过我们的网站在线申请虚拟卡。申请流程快捷简单，批准后您将立即收到您的卡详细信息。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-4">
+                            <a data-bs-toggle="collapse" href="#collapse4" class="faq collapsed" aria-expanded="false"
+                               aria-controls="collapse4">
+                                <div class="card-header p-4" id="heading4">
+                                    <div class="mb-0 text-dark item">如何为我的账户注资？</div>
+                                </div>
+                            </a>
+                            <div id="collapse4" class="collapse" aria-labelledby="heading4"
+                                 data-parent="#accordionExample">
+                                <div class="card-body pt-1">
+                                    <p class="mb-0 text-muted">
+                                        您可以使用多种方式为您的账户注资，包括银行转账、信用卡和借记卡。我们支持多种货币，因此您可以选择最适合您需求的货币。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="static/picture/Questions2.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="cta section" id="about">
+    <div class="cta-image position-relative">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center">
+                        <div class="mt-3 fw-bold item2">关于我们</div>
+                        <div class="text-dark item" style="line-height: 1.9;">&nbsp;&nbsp;&nbsp;&nbsp;VCC是领先的虚拟信用卡发行平台；与国际发卡机构合作推出的虚拟卡服务；致力于为企业和个人提供安全、高效、便捷的支付解决方案。我们专注于利用最先进的技术
+                            集成技术；非传统的支付方式；帮助用户在数字经济时代获得无缝的支付体验
+                            致力于创新集成技术；提供更安全、更高效的支付解决方案；协助用户在数字经济时代轻松实现支付自由。VCC将不断追求卓越；不断优化产品和服务；成为用户值得信赖的支付合作伙伴</span> </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    <section id="subscribe" class="section cta-2">-->
+<!--        <div class="cta-image position-relative " id="cta-footer">-->
+<!--            <div class="container">-->
+<!--                <div class="row justify-content-center">-->
+<!--                    <div class="col-lg-10">-->
+<!--                        <div class="text-center">-->
+<!--                            <div class="fw-bold item2">使用 VCC 轻松实现全球支付</span>-->
+<!--                            </div>-->
+
+<!--                            <div class="row justify-content-center">-->
+<!--                                <div class="col-lg-8">-->
+<!--                                    <form class="subscribe-form mt-4" action="#">-->
+<!--                                        <div class="input-group justify-content-center">-->
+<!--                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="电子邮箱">-->
+<!--                                            <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary" type="button" id="subscribebtn" style="padding: 20px 30px;">订阅</a>-->
+<!--                                        </div>-->
+<!--                                        <p class="f-14 mt-2">邮件订阅成功后，最新活动消息以邮件的方式通知</p>-->
+<!--                                    </form>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<section class="footer py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="address-content">
+                    <div class="text-black item">迪塔布兰卡特有限责任公司</div>
+                    <ul class="menu list-unstyled mt-3">
+                        <li class="menu-item"><i class="mdi mdi-telegram f-20"></i> 电报:<a href="https://t.me/LKJ118">@LKJ118</a>
+                        </li>
+                        <li class="menu-item"></li>
+                        <li class="menu-item"><i class="mdi mdi-telegram f-20"></i> 双向机器人:<a
+                                href="https://t.me/LKJ11888_bot">@LKJ11888_bot</a></li>
+                        <li class="menu-item"></li>
+                        <li class="menu-item"><i class="mdi mdi-email f-20"></i> 电子邮件:<a>ppay71845@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-icon d-flex mt-4 mb-4 mb-lg-0">
+                    <div class="facebook">
+                        <!--                            <a href="cn.html"><i class="mdi mdi-facebook-box f-30"></i></a>-->
+                        <i class="mdi mdi-facebook-box f-30"></i>
+                    </div>
+                    <div class="twitter ms-4">
+                        <!--                            <a href="cn.html"><i class="mdi mdi-twitter f-30"></i></a>-->
+                        <i class="mdi mdi-twitter f-30"></i>
+                    </div>
+                    <div class="twitter ms-4">
+                        <!--                            <a href="cn.html"><i class="mdi mdi-instagram f-30"></i></a>-->
+                        <i class="mdi mdi-instagram f-30"></i>
+                    </div>
+                    <div class="twitter ms-4">
+                        <!--                            <a href="cn.html"><i class="mdi mdi-linkedin-box f-30"></i></a>-->
+                        <i class="mdi mdi-linkedin-box f-30"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-black item">运营工作时间</div>
+                <ul class="menu list-unstyled mt-3">
+                    <li class="menu-item">周一至周三：上午 9 点至下午 4 点</li>
+                    <li class="menu-item"></li>
+                    <li class="menu-item">周四 - 周五：上午 9 点至下午 5 点</li>
+                    <li class="menu-item"></li>
+                    <li class="menu-item">周末：休息</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="copy-right mb-3 text-center text-muted">
+
+                    <span style="margin-right: 30px;color: #8C89A2;cursor: pointer"
+                          onclick="openModal2()">服务协议</span> <span
+                        style="color: #8C89A2">|</span> <span style="margin-left: 30px;color: #8C89A2;cursor: pointer"
+                                                              onclick="openModal()">隐私政策</span>
+                </div>
+                <div class="copy-right mb-5 text-center text-muted">Copyright &copy; 2024.VCC All rights reserved.</div>
+                <div class="copy-right mb-3 text-center text-muted" style="font-size: 12px">
+                    Facebook和Facebook標誌是Meta Platforms, Inc在美國及其他國家和地區註冊的商標。Google、Google
+                    Ads和Google標誌是Google, LLC.在美國及其他國家和地區註冊的商標，
+                    Paypal和Paypal商标是Paypal,Inc在美国和其他国家地区注册的商标。VCC的解決方案可能不適用於所有客戶。條款和條件適用並可能會變更。Visa是Visa,
+                    U.S.A. Inc的註冊商標。所有其他商標和服務標誌均屬該所有者。Mastercard是一個註冊商標，圓圈設計是Mastercard
+                    International Incorporated的商標。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 弹窗遮罩层 -->
+<div id="modal" class="modal-overlay" onclick="closeModal()">
+    <!-- 弹窗内容 -->
+    <div class="modal-content2">
+        <div class="text-center">
+            <h2>隐私政策</h2>
+        </div>
+        <p>前言</p>
+        <p>
+            VCC国际信用卡（以下简称“本平台”或“我们”）重视客户（以下简称“您”）的个人信息保护，承诺始终贯彻隐私政策。在您使用本平台的服务时，我们可能会收集、储存、使用和分享您的相关个人信息。通过本政策，我们向您说明我们如何收集、储存、使用和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本隐私政策适用于您通过VCC国际信用卡访问和使用本平台的产品与服务。</p>
+        <p>
+            请在勾选“同意”之前仔细阅读本《隐私政策》内容，以确保已全部知晓并充分理解其内容及相应法律后果。您点击或勾选“同意”即视为您接受本隐私政策，本平台将按照相关法律法规及本政策来合法使用和保护您的个人信息。</p>
+        <p>本《隐私政策》将帮助您了解以下内容：</p>
+        <ul>
+            <li> 一、本平台如何收集和使用您的个人信息；</li>
+            <li> 二、本平台如何使用Cookie和同类技术；</li>
+            <li> 三、本平台如何委托处理、共享、转让和公开披露您的个人信息；</li>
+            <li> 四、本平台如何存储和保护您的个人信息；</li>
+            <li> 五、您的权利；</li>
+            <li> 六、对第三方的责任声明；</li>
+            <li> 七、对未成年人个人信息的保护；</li>
+            <li> 八、本隐私政策如何更新；</li>
+            <li> 九、如何联系本平台。</li>
+        </ul>
+
+        <p>一、本平台如何收集和使用您的个人信息</p>
+        <p>个人信息
+            是指能够单独或结合其他信息识别您身份或反映活动情况的各种信息，包括但不限于您的姓名、出生日期、身份证件号码、生物识别信息、联系方式、住址、账户信息、交易记录、征信信息、消费偏好、行踪轨迹、教育和工作信息等。</p>
+        <ul>
+            <li>1.
+                登录及验证信息：您登录和注册VCC国际信用卡时，本平台需要收集您的短信验证码、IP地址、设备信息等，用于身份验证，保障您正常使用我们的服务。
+            </li>
+            <li>2.
+                开户信息：在开立账户时，本平台会向您申请麦克风、摄像头、相册访问权限，同时收集您的身份证照片、四要素信息及视频资料，用于身份验证和KYC（了解您的客户）验证。
+            </li>
+            <li>3.
+                交易信息：在VCC国际信用卡网站处理交易时，本平台会收集注册账号、密码、验证码等，用于验证交易的有效性，并收集您的交易记录以便查询。
+            </li>
+        </ul>
+
+        <p>二、本平台如何使用Cookie和同类技术</p>
+        <ul>
+            <li>1.
+                Cookie：为确保网站正常运转，本平台会在您的设备上存储小数据文件（Cookie），以记录您的偏好和使用数据。您可以清除或阻止Cookie，但这可能影响您部分服务的使用。
+            </li>
+            <li>2. Do Not Track（请勿追踪）：若您的浏览器启用了Do Not Track请求，本平台会尊重您的选择。</li>
+        </ul>
+
+        <p>三、本平台如何委托处理、共享、转让和公开披露您的个人信息</p>
+        <ul>
+            <li>1.
+                共享：在业务必要的情况下，本平台可能与关联方共享您的必要信息。如需改变处理目的，本平台将再次征求您的同意。
+            </li>
+            <li>2. 转让：如发生合并、收购或资产转让，涉及个人信息转让时，本平台将通知您，若有重大变更需重新获取您的同意。</li>
+            <li>3. 公开披露：本平台不会公开披露您的信息，除非获得您的授权，或根据法律法规要求进行公开披露。</li>
+            <li>4.
+                例外情形：根据法律法规规定，本平台可能在履行法律义务、执行刑事侦查或维护重大利益等特定情形下无需征求您的同意而收集使用信息。
+            </li>
+        </ul>
+
+        <p>四、本平台如何存储和保护您的个人信息</p>
+        <ul>
+            <li>1. 存储：本平台会安全存储您的信息，信息保存期限为满足政策或服务必要的最短时间。</li>
+            <li>2.
+                保护措施：本平台采取行业标准的技术和管理措施防止信息丢失、篡改或泄露。例如：使用加密技术、专线传输和访问控制机制。
+            </li>
+        </ul>
+
+        <p>五、您的权利</p>
+        <ul>
+            <li>1. 访问：有权访问您的个人信息。</li>
+            <li>2. 更正：当信息有误时，有权要求更新更正。</li>
+            <li>3. 删除：在法律允许的情况下要求删除个人信息。</li>
+            <li>4. 撤销同意：您可以随时撤销已授权的同意。</li>
+        </ul>
+
+        <p>六、对第三方的责任声明</p>
+        <p>
+            在使用本平台过程中，第三方可能会通过Cookie或其他插件收集您的信息。这些第三方的隐私政策不受本平台控制，本平台建议您查阅并确认其隐私政策。</p>
+
+        <p>七、对未成年人个人信息的保护</p>
+        <p>
+            本平台重视未成年人信息保护，建议父母或监护人指导未成年人使用平台服务。未成年人在提供信息前需获得监护人同意，监护人有权联系平台了解或删除相关信息。</p>
+
+        <p>八、本隐私政策如何更新</p>
+        <p>
+            本平台可能因业务变更、法律法规变化等对本政策进行修订，修改后的政策将以推送通知、弹窗等方式告知您，重大变更内容将提供显著提示。您可选择是否继续授权。</p>
+
+        <p>九、如何联系本平台</p>
+        <p>如您对本隐私政策有任何疑问或需要进一步帮助，请通过以下方式与本平台联系：ppay71845@gmail.com</p>
+        <p>请检查该隐私政策内容，如需进一步调整或添加具体条款，请告知！</p>
+        <div class="text-center">
+            <button class="close-btn " onclick="closeModal()">关闭</button>
+        </div>
+    </div>
+</div>
+
+<!-- 弹窗遮罩层 -->
+<div id="modal2" class="modal-overlay" onclick="closeModal2()">
+    <!-- 弹窗内容 -->
+    <div class="modal-content2">
+        <div class="text-center">
+            <h2>服务协议</h2>
+        </div>
+        <p>VCC国际信用卡网页版服务使用协议</p>
+        <p>
+            本协议是VCC国际信用卡与您就VCC国际信用卡网页版服务（以下简称“本服务”）的使用相关事项所订立的有效合约。您登录VCC国际信用卡网页版，即表示您知悉、理解并同意接受本协议的全部内容，并确认承担由此产生的一切法律后果。</p>
+        <p>
+            在确认接受本协议之前，请您务必仔细阅读、充分理解本协议全部内容，特别是免除或限制责任的条款。如有任何内容您不同意或无法准确理解相关条款的含义，请不要进行后续操作。</p>
+        <p>一、声明与承诺</p>
+        <ul>
+            <li> 1.
+                您同意并理解，VCC国际信用卡有权根据业务发展需要，随时对本服务的系统、功能、内容及方式进行升级、调整或改造，以提升服务质量。
+            </li>
+            <li> 2.
+                若VCC国际信用卡因系统升级、业务发展或法律法规变更而对本协议条款进行调整，您可在最新版本中查阅条款内容。若您继续使用本服务，即视为已充分阅读、理解并接受修改后的协议；否则，应停止使用。
+            </li>
+            <li> 3.
+                VCC国际信用卡在处理与您相关的银行业务时，将根据需要向依法设立的征信机构及其他合法机构查询、核验或提供您的信息，并保证对您的信息承担保密责任。
+            </li>
+            <li>4.
+                您理解并授权，为确保服务安全，VCC国际信用卡将使用您的设备资源，并在必要时采集、存储并使用个人信息和设备信息，如设备型号、IP地址等，以保障您的交易安全。
+            </li>
+        </ul>
+        <p>二、费用与关闭</p>
+        <ul>
+            <li> 1.
+                您使用VCC国际信用卡网页版时，需按VCC国际信用卡公告的服务价格支付相关费用。如费用标准变更，您有权选择是否继续使用服务；若不接受新公告内容，可申请变更或终止服务，否则视为接受调整内容。
+            </li>
+            <li> 2.
+                您有权随时选择关闭VCC国际信用卡网页版服务；完成关闭操作即表示服务终止。若您违反协议内容，VCC国际信用卡有权单方面暂停或终止服务，并保留追究责任的权利。
+            </li>
+        </ul>
+        <p>三、使用规则</p>
+        <ul>
+            <li> 1. 您自愿使用VCC国际信用卡网页版，并须遵守VCC国际信用卡所提供业务的相关规则、章程与协议。</li>
+            <li> 2.
+                您可以直接从VCC国际信用卡官方网站或其他合法授权渠道访问网页版服务。如使用未经授权的程序或第三方应用访问网页版服务，导致任何后果，均由您自行承担。
+            </li>
+            <li> 3.
+                使用过程中，因网络、通信或设备故障等不可控因素可能导致服务中断、交易延迟或无法完成，VCC国际信用卡不承担责任。您可在故障消失后再次尝试操作，或通过其他自助渠道办理。
+            </li>
+            <li> 4.
+                为确保交易安全，您需妥善保管账户、密码等重要信息，且所有操作均视为您本人操作并承担相应责任。若因丢失相关信息导致风险或资金损失，由您自行承担。
+            </li>
+            <li> 5.
+                您在使用VCC国际信用卡服务时，必须提供真实、合法、完整的数据。若数据不实或未及时更新，VCC国际信用卡有权拒绝、暂停或终止提供服务，由此产生的后果由您承担。
+            </li>
+        </ul>
+        <p>四、个人信息与隐私保护</p>
+        <ul>
+            <li> 1.
+                为了向您提供更好的服务，VCC国际信用卡将根据需要采集、传输、分析和保存您的个人信息，并承诺通过专业技术手段保障您的隐私安全。除非获得您的明确同意或根据法律规定，VCC国际信用卡不会将您的信息泄露给第三方。
+            </li>
+            <li>2.
+                若您授权，VCC国际信用卡可在处理银行业务时向合法设立的征信机构及其他合作机构提供相关信息，以确保服务的合法合规性。所有合作机构均被要求对您的信息承担保密责任。
+            </li>
+            <li> 3. VCC国际信用卡在获取您授权后可能采集您的设备信息，如设备型号、IP地址、地理位置等，以提高您的交易安全性。
+            </li>
+        </ul>
+        <p>五、禁止事项与合规性</p>
+        <ul>
+            <li> 1.
+                您在使用本服务时，不得进行任何违法、违规的活动。如洗钱、欺诈等行为，一经发现或合理怀疑，VCC国际信用卡有权立即暂停、停止服务或采取其他风控措施。
+            </li>
+            <li> 2. 您同意，为保障您的信息和交易安全，VCC国际信用卡可采取合法合规的安全措施。</li>
+        </ul>
+        <p>六、争议解决与法律适用</p>
+        <ul>
+            <li> 1.
+                若您与VCC国际信用卡因本协议发生争议，双方应协商解决；协商不成的，可向VCC国际信用卡总部所在地法院提起诉讼。
+            </li>
+            <li>2. 本协议的订立、效力、履行、解释及争议的解决，均适用VCC国际信用卡所在地的法律法规。</li>
+            <li>3. 本协议任何条款无效或不可执行，不影响其他条款的效力。</li>
+            <li>4. 协议中未尽事宜，将依据法律法规及VCC国际信用卡相关业务规则执行。</li>
+        </ul>
+
+        <p>请核对此协议是否满足您的业务需求，如需进一步修改或增加特定条款，欢迎告知！</p>
+
+        <div class="text-center">
+            <button class="close-btn " onclick="closeModal2()">关闭</button>
+        </div>
+    </div>
+</div>
+
+<script>
     function toggleClass(event) {
         const navbar = document.getElementById('navbarCollapse');
         if (navbar.classList.contains('show')) {
@@ -611,11 +836,31 @@
             navbar.classList.add('show');
         }
     }
+
+    // 打开弹窗
+    function openModal() {
+        document.getElementById("modal").classList.add("show");
+    }
+
+    // 关闭弹窗
+    function closeModal() {
+        document.getElementById("modal").classList.remove("show");
+    }
+
+    // 打开弹窗
+    function openModal2() {
+        document.getElementById("modal2").classList.add("show");
+    }
+
+    // 关闭弹窗
+    function closeModal2() {
+        document.getElementById("modal2").classList.remove("show");
+    }
 </script>
-    <script src="static/js/bootstrap.bundle.min.js"></script>
-    <script src="static/js/tiny-slider.js"></script>
-    <script src="static/js/counter.init.js"></script>
-    <script src="static/js/app.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/tiny-slider.js"></script>
+<script src="static/js/counter.init.js"></script>
+<script src="static/js/app.js"></script>
 </body>
 </html>
 
@@ -625,9 +870,49 @@
         font-size: 20px;
 
     }
+
     .item2 {
         font-size: 32px;
 
+    }
+
+    /* 弹窗遮罩层 */
+    .modal-overlay {
+        display: none; /* 默认隐藏 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 弹窗内容 */
+    .modal-content2 {
+        background-color: #fff;
+        padding: 20px;
+        width: 600px;
+        max-height: 600px; /* 固定最大高度 */
+        border-radius: 8px;
+        overflow-y: auto; /* 启用垂直滚动条 */
+    }
+
+    /* 显示弹窗的样式 */
+    .modal-overlay.show {
+        display: flex;
+    }
+
+    /* 关闭按钮 */
+    .close-btn {
+        margin-top: 10px;
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
     }
 
 </style>

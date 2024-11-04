@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="static/css/swiper.min.css" type="text/css">
     <link href="static/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
-	<link rel="shortcut icon" href="/static/image/logo.webp">
+    <link rel="shortcut icon" href="/static/image/logo.webp">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDQZ58KZYG"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-TDQZ58KZYG');
@@ -23,599 +27,862 @@
 
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
-    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
-        <div class="container-fluid custom-container">
-            <a class="navbar-brand logo text-uppercase" href="javascript:;">
-                <img alt="logo" src="static/image/logo.webp" class="logo-light" style="height: 35px;">
-            </a>
-            <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
-                <i class="mdi mdi-menu"></i>
-            </button>
+<nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+    <div class="container-fluid custom-container">
+        <a class="navbar-brand logo text-uppercase" href="javascript:;">
+            <img alt="logo" src="static/image/logo.webp" class="logo-light" style="height: 35px;">
+        </a>
+        <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+            <i class="mdi mdi-menu"></i>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav  navbar-center">
+                <li class="nav-item active">
+                    <a href="#home" class="nav-link active" onclick="toggleClass(event)">home</a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover">
+                    <a href="#service" class="nav-link " onclick="toggleClass(event)">service</a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover">
+                    <a href="#advantages" class="nav-link " onclick="toggleClass(event)">advantages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link" onclick="toggleClass(event)">pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq" class="nav-link" onclick="toggleClass(event)">faq</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" onclick="toggleClass(event)">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#subscribe" class="nav-link" onclick="toggleClass(event)">Contact us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-menu list-inline d-flex align-items-center mb-0 order-1">
+            <div class="list-inline-item dropdown language me-4">
+                <a href="#" class="header-item" id="userdropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img width="24" height="24" alt="en" src="/static/image/en.png"> <span>English</span><span
+                        style="color:#666;font-size:8px;font-weight:bold;">▼</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
+                    <li><a class="dropdown-item" href="/index.html"><img width="24" height="24" alt="en"
+                                                                         src="/static/image/en.png"> English</a></li>
+                    <li><a class="dropdown-item" href="/cn.html"><img width="24" height="24" alt="en"
+                                                                      src="/static/image/cn.png"> 简体中文</a></li>
+                </ul>
+            </div>
+            <!--                <div class="Account " style="margin-left: 30px;">-->
+            <!--                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">-->
+            <!--                        ppay71845@gmail.com-->
+            <!--                    </a>-->
+
+            <!--                </div>-->
+            <div class="Account " style="margin-left: 30px;">
                 <ul class="navbar-nav  navbar-center">
-                    <li class="nav-item active">
-                        <a href="#home" class="nav-link active" onclick="toggleClass(event)">home</a>
-                    </li>
-                    <li class="nav-item dropdown dropdown-hover">
-                        <a href="#service" class="nav-link " onclick="toggleClass(event)">service</a>
-                    </li>
-					<li class="nav-item dropdown dropdown-hover">
-                        <a href="#advantages" class="nav-link " onclick="toggleClass(event)">advantages</a>
+                    <li class="nav-item">
+                        <a href="https://web.vcc.center/login" class="nav-link active" onclick="toggleClass(event)">login</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#pricing" class="nav-link" onclick="toggleClass(event)">pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#faq" class="nav-link" onclick="toggleClass(event)">faq</a>
-                    </li>
-					 <li class="nav-item">
-                        <a href="#about" class="nav-link" onclick="toggleClass(event)">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#subscribe" class="nav-link" onclick="toggleClass(event)">Contact us</a>
+                        <a href="https://web.vcc.center.login" class="nav-link active"
+                           onclick="toggleClass(event)">register</a>
                     </li>
                 </ul>
             </div>
-            <div class="header-menu list-inline d-flex align-items-center mb-0 order-1">
-                <div class="list-inline-item dropdown language me-4">
-                    <a href="#" class="header-item" id="userdropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img width="24" height="24" alt="en" src="/static/image/en.png"> <span>English</span><span style="color:#666;font-size:8px;font-weight:bold;">▼</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
-                        <li><a class="dropdown-item" href="/index.html"><img width="24" height="24" alt="en" src="/static/image/en.png"> English</a></li>
-                        <li><a class="dropdown-item" href="/cn.html"><img width="24" height="24" alt="en" src="/static/image/cn.png"> 简体中文</a></li>
-                    </ul>
-                </div>
-                <div class="Account " style="margin-left: 30px;">
-                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        ppay71845@gmail.com
-                    </a>
-
-                </div>
-            </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
-    <section class="home" id="home" style="background-color: #f5f6fa;">
-        <div class="container" id="ani-round">
-            <div class="home-content">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="title mt-5 mt-lg-0 item2">
-                           Support global payment
-                        </div>
-                        <p class="f-16 my-4 text-muted">VCC integrates the two major credit card institutions VISA and Mastercard into a virtual credit card issuance platform; professional positioning,
-Provide high-quality services to corporate customers and agency customers; have the most comprehensive card issuer resources; hold up to 20
-Multiple card warehouses; holds global multi-currency settlement; currently holds more than 680 diversified consumption scenarios
-; comprehensively covering e-commerce, advertising, games, entertainment, shopping, film and television, servers and other consumer fields,
-Meet the needs of customers in various consumption scenarios around the world.</p>
-                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary"></i>
-                            Contact us</a>
-
-                    </div>
-                    <div class="col-lg-6 mt-5">
-                        <div class="animation-image" >
-                            <div class="main-image mt-5 mt-lg-0 ms-lg-5 position-relative">
-                                <img src="static/image/banner-card3.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-	    <section class="section " >
-        <div class="container">
-            <div class="row align-items-center" id="part1">
-                <div class="col-lg-7">
-                    <div class="sec-image position-relative " id="sec-image">
-                        <div class="bg-img overflow-hidden border-radius">
-                            <img src="static/image/img3.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
-				    <div class="mb-3 item2">core business</div>
-                    <div class="text-muted fw-normal"><span class="fw-bold"></span></div>
-                    <p class="mt-3"><span class="text-primary fw-normal">√</span>Supports more than 200 well-known merchants for online payment</p>
-					<p class="mt-3"><span class="text-primary fw-normal">√</span>Facebook ads、Google ads 、Paypal</p>
-					<p class="mt-3"><span class="text-primary fw-normal">√</span>Receive OTP verification, 3D verification</p>
-					<p class="mt-3"><span class="text-primary fw-normal">√</span>Special card supports unlimited refunds</p>
-					<p class="mt-3"><span class="text-primary fw-normal">√</span>Eliminate cumbersome real-name authentication and complicated processes</p>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section class="section bg-light" id="service">
-        <div class="container">
-            <div class="row justify-content-center mb-4 pb-2">
-                <div class="col-lg-6">
-                    <div class="heading text-center">
-                        <div class="mb-3 item2">Our services
-                        </div>
-                        <p class="text-muted para-p mx-auto mb-0">A virtual credit card platform that comprehensively covers consumption scenarios</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">Cross-border e-commerce</div>
-                        <p style="height:60px;">Shopify ､Amazon ､ebay ､AliExpress ､Taobao</p>
-                        <div class="button-link mt-2">
-                           <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">advertising traffic</div>
-                        <p style="height:60px;">Facebook Ads ､ Google Ads ､ Instagram Ads ､ Tiktok Ads ､ Telegram Ads</p>
-                        <div class="button-link mt-2">
-                           <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">Ai</div>
-                        <p style="height:60px;">OpenAI､Claude､ChatBase､Perplexity､Gemini</p>
-                        <div class="button-link mt-2">
-                           <a  href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
-                        </div>
-                    </div>
-                </div>
-				                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">Film and television</div>
-                        <p style="height:60px;">YouTube､Netflix､imdb､disneyplus､kwai-video</p>
-                        <div class="button-link mt-2">
-                           <a  href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">Travel food</div>
-                        <p style="height:60px;">Airbnb､ Tripadvisor､ Zomato､ Yelp､ </p>
-                        <div class="button-link mt-2">
-                           <a  href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4 pt-2">
-                    <div class="service-box text-center text-lg-start">
-
-                        <div class="fw-bold mt-4 mb-3 item">payment instrument</div>
-                        <p style="height:60px;">PayPal､Alipay､GooglePay､Skrill､Stripe､Payoneer</p>
-                        <div class="button-link mt-2">
-                           <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section " >
-        <div class="container">
-            <div class="row align-items-center" id="part1">
-                <div class="col-lg-7">
-                    <div class="sec-image position-relative " id="sec-image">
-                        <div class="bg-img overflow-hidden border-radius">
-                            <img src="static/image/cj3.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
-				    <div class="mb-3 item2">Global credit card payment solutions for the digital era</div>
-                    <div class="text-muted fw-normal"><span class="fw-bold">Customer-centric</span></div>
-                    <p class="mt-3">
-Our customers are at the heart of everything we do, and we are committed to providing them with flexible, reliable and secure ways to pay.</p>
-                    <div class="text-muted fw-normal"><span class="fw-bold">Innovation and Technology</span></div>
-                    <p class="mt-3">We are committed to investing in cutting-edge technology and innovative solutions to provide our customers with the best payment experience.</p>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-<section class="section bg-light" id="advantages">
-        <div class="container">
-            <div class="row justify-content-center mb-4 pb-2">
-                <div class="col-lg-6">
-                    <div class="heading text-center">
-                        <div class="mb-3 item2">Our advantages
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 mt-3 pt-2"     style="height: 265px;">
-                    <div class="service-box text-center text-lg-start">
-                        <div class="service-image">
-                            <img alt="1101" src="static/image/1101.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">
-Transaction security</div>
-                        <p style="height:60px;">International PCI DSS Certification<br>
-Comprehensive customized risk control configuration</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
-                    <div class="service-box text-center text-lg-start">
-                        <div class="service-image">
-                            <img alt="1102" src="static/image/1102.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">
-Rich card segments</div>
-                        <p style="height:60px;">Multiple number segments<br>
-
-Meet the needs of various trading scenarios</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
-                    <div class="service-box text-center text-lg-start">
-					<div class="service-image">
-                            <img alt="1103" src="static/image/1103.svg" style="width: 50px;">
-                        </div>
-                       <div class="fw-bold mt-4 mb-3 item">Efficient card opening</div>
-                        <p style="height:60px;">Open card in seconds<br>
-Open multiple tickets at once</p>
-
-                    </div>
-                </div>
-				                <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
-                    <div class="service-box text-center text-lg-start">
-                       <div class="service-image">
-                            <img alt="1104" src="static/image/1104.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">Multi-currency card</div>
-                        <p style="height:60px;">USD、HKD、GBP currency card<br>
-
-Meet payment needs in specific currencies and reduce exchange losses</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
-                    <div class="service-box text-center text-lg-start">
-                       <div class="service-image">
-                            <img alt="1105" src="static/image/1105.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">Various scenes</div>
-                        <p style="height:60px;">Online multiple scenes<br>
-Multi-platform consumption</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
-                    <div class="service-box text-center text-lg-start">
-                        <div class="service-image">
-                            <img alt="1106" src="static/image/1106.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">Technically reliable</div>
-                        <p style="height:60px;">API docking<br>
-Service platform card opening</p>
-                    </div>
-                </div>
-				<div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
-                    <div class="service-box text-center text-lg-start">
-                        <div class="service-image">
-                            <img alt="1107" src="static/image/1107.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">Clear reconciliation</div>
-                        <p style="height:60px;">Online unified management of multiple cards<br>
-Clear online reconciliation of income and expenditure</p>
-                    </div>
-                </div>
-				<div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
-                    <div class="service-box text-center text-lg-start">
-                        <div class="service-image">
-                            <img alt="1108" src="static/image/1108.svg" style="width: 50px;">
-                        </div>
-                        <div class="fw-bold mt-4 mb-3 item">Customer consultation</div>
-                        <p style="height:60px;">
-All-day service on weekdays<br>
-Ensure customers have no worries when using their cards</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	<section class=" section" id="cta-ani">
-        <div class="cta-image position-relative">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="text-center">
-						  <div class="mt-3 fw-bold item2">Choose USDT to recharge your account</div>
-                            <div class="text-dark item">
-You can use USDT to recharge your account. The cost of this recharge method is very low. Through our quick response system, the USDT recharge method provides 24-hour recharge service, and the USDT recharge method can be reached within 3 minutes. your account. </div>
-
-                            <a href="https://t.me/LKJ118" target="_blank" class=" btn-lg btn-primary mt-4 f-14">Contact us</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section bg-light" id="pricing">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="text-center">
-                        <div class="mb-3 item2">price</div>
-                        <p class="text-muted para-p mx-auto mb-0">VCC provides comprehensive virtual credit card issuance and management services designed to drive your global business growth. Not only do we provide a full suite of functional services, we also offer competitive pricing in the industry. The fees below are calculated based on your consumption; the higher your consumption, the lower the fees.</p>
-                    </div>
-                </div>
-            </div>
+<section class="home" id="home" style="background-color: #f5f6fa;">
+    <div class="container" id="ani-round">
+        <div class="home-content">
             <div class="row align-items-center">
-                <div class="col-lg-4  mt-5">
-                    <div class="pricing-box box-shadow p-4 border-radius">
-                        <div class="text-center mb-4">
-                            <div class="text-primary">
-Cumulative monthly consumption of US$3,000-10,000</div>
-                            <div class="price-title mt-2">
-                                <div class="tag"></div>
-                                <div class="mb-0 text-white">Card issuance fee</div>
-                            </div>
-                            <div class="price-tag mt-4">
-                                <h2><sup>$</sup><span class="text-primary">2.5</span></h2>
-                            </div>
-                            <div class="detail mt-4">
-                                <p><span class="text-primary icon me-2">∎</span>Monthly/Annual Fee: $0</p>
-                                <p><span class="text-primary icon me-2">∎</span>Recharge fee: 4.5% USD</p>
-                                <p><span class="text-primary icon me-2">∎</span>Single transaction limit: US$50,000</p>
-                                <p><span class="text-primary icon me-2">∎</span>Annual spending limit: US$200,000</p>
-                                <p><span class="text-primary icon me-2">∎</span>Card validity: 2-3 years</p>
-                            </div>
-
-                        </div>
-                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">Start now</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4  mt-5">
-                    <div class="pricing-box box-shadow p-4 border-radius">
-                        <div class="text-center mb-4">
-                            <div class="text-primary">
-Cumulative monthly consumption of US$10,000-50,000</div>
-                            <div class="price-title mt-2">
-                                <div class="tag"></div>
-                                <div class="mb-0 text-white">Card issuance fee</div>
-                            </div>
-                            <div class="price-tag mt-4">
-                                <h2><sup>$</sup><span class="text-primary">2</span></h2>
-                            </div>
-
-                            <div class="detail mt-4">
-                                 <p><span class="text-primary icon me-2">∎</span>Monthly/Annual Fee: $0</p>
-                                <p><span class="text-primary icon me-2">∎</span>Recharge fee: 4% USD</p>
-                                <p><span class="text-primary icon me-2">∎</span>Single transaction limit: US$50,000</p>
-                                <p><span class="text-primary icon me-2">∎</span>Annual spending limit: US$200,000</p>
-                                <p><span class="text-primary icon me-2">∎</span>Card validity: 2-3 years</p>
-                            </div>
-
-                        </div>
-                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">Start now</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4  mt-5">
-                    <div class="pricing-box box-shadow p-4 border-radius">
-                        <div class="text-center mb-4">
-                            <div class="text-primary">
-Cumulative monthly consumption of US$50,000-100,000</div>
-                            <div class="price-title mt-2">
-                                <div class="tag"></div>
-                                <div class="mb-0 text-white">Card issuance fee</div>
-                            </div>
-                            <div class="price-tag mt-4">
-                                <h2><sup>$</sup><span class="text-primary">1.7</span></h2>
-                            </div>
-
-                            <div class="detail mt-4">
-                                 <p><span class="text-primary icon me-2">∎</span>Monthly/Annual Fee: $0</p>
-                                <p><span class="text-primary icon me-2">∎</span>Recharge fee: 3% USD</p>
-                                <p><span class="text-primary icon me-2">∎</span>Single transaction limit: US$50,000</p>
-                                <p><span class="text-primary icon me-2">∎</span>Annual spending limit: US$200,000</p>
-                                <p><span class="text-primary icon me-2">∎</span>Card validity: 2-3 years</p>
-                            </div>
-
-                        </div>
-                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">Start now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section faq" id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-box text-center">
-                        <div class="mb-3 item2">FAQ</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center align-items-center">
                 <div class="col-lg-6">
-                    <div class="accordion mt-5" id="accordionExample">
-                        <div class="faq-collaps faq-collaps-2">
-                            <div class="card mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse1" class="faq collapsed">
-                                    <div class="card-header p-4" id="heading1">
-                                        <div class="mb-0 text-dark item">What is a virtual card?</div>
-                                    </div>
-                                </a>
-                                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
-                                    <div class="card-body pt-1">
-                                        <p class="mb-0 text-muted">A virtual card is a digital card that can be used for online transactions. This is a safe and convenient way to pay without the need for a physical card.
-                                            .</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse2" class="faq collapsed">
-                                    <div class="card-header p-4" id="heading2">
-                                        <div class="mb-0 text-dark item">What currencies do you support?</div>
-                                    </div>
-                                </a>
-                                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
-                                    <div class="card-body pt-1">
-                                        <p class="mb-0 text-muted">We support multiple currencies including USD, EUR, GBP and JPY. We are constantly expanding the list of supported currencies to better meet the needs of our customers.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse3" class="faq collapsed">
-                                    <div class="card-header p-4" id="heading3">
-                                        <div class="mb-0 text-dark item">How to apply for a virtual card？</div>
-                                    </div>
-                                </a>
-                                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
-                                    <div class="card-body pt-1">
-                                        <p class="mb-0 text-muted">You can apply for a virtual card online through our website. The application process is quick and easy, and you'll receive your card details immediately upon approval.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mt-4">
-                                <a data-bs-toggle="collapse" href="#collapse4" class="faq collapsed" aria-expanded="false" aria-controls="collapse4">
-                                    <div class="card-header p-4" id="heading4">
-                                        <div class="mb-0 text-dark item">How to fund my account？</div>
-                                    </div>
-                                </a>
-                                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
-                                    <div class="card-body pt-1">
-                                        <p class="mb-0 text-muted">You can fund your account using a variety of methods, including bank transfer, credit card, and debit card. We support multiple currencies so you can choose the one that best suits your needs.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="title mt-5 mt-lg-0 item2">
+                        Support global payment
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="static/picture/Questions2.png" alt="" class="img-fluid">
-                </div>
-            </div>
-
-        </div>
-    </section>
-     <section class="cta section" id="about">
-        <div class="cta-image position-relative">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="text-center">
-						  <div class="mt-3 fw-bold item2">about Us</div>
-                            <div class="text-dark item" style="line-height: 1.9;">&nbsp;&nbsp;&nbsp;&nbsp;VCC is a leading virtual credit card issuance platform; a virtual card service launched in cooperation with international card issuers; it is committed to providing safe, efficient and convenient payment solutions for businesses and individuals. We focus on leveraging the most advanced technology integration technology; non-traditional payment methods; helping users obtain a seamless payment experience in the digital economy era. Committed to innovative integration technology; providing safer and more efficient payment solutions; assisting users in digital economy. In the economic era, payment freedom is easily achieved. VCC will continue to pursue excellence; constantly optimize products and services; and become a trustworthy payment partner for users.</span> </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="subscribe" class="section cta-2">
-        <div class="cta-image position-relative " id="cta-footer">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="text-center">
-                            <div class="fw-bold item2">Easily enable global payments using VCC</span>
-                            </div>
-
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <form class="subscribe-form mt-4" action="#">
-                                        <div class="input-group justify-content-center">
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
-                                            <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary" type="button" id="subscribebtn" style="padding: 20px 30px;">subscription</a>
-                                        </div>
-                                        <p class="f-14 mt-2">After the email subscription is successful, the latest event news will be notified by email.</p>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="footer py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="address-content">
-                        <div class="text-black item">Dita Blancat LLC</div>
-						<ul class="menu list-unstyled mt-3">
-                        <li class="menu-item"><i class="mdi mdi-telegram f-20"></i> telegram:<a href="https://t.me/LKJ118">@LKJ118</a></li>
-						 <li class="menu-item"></li>
-                        <li class="menu-item"><i class="mdi mdi-telegram f-20"></i> telegrambot:<a href="https://t.me/LKJ11888_bot">@LKJ11888_bot</a></li>
-						 <li class="menu-item"></li>
-                        <li class="menu-item"><i class="mdi mdi-email f-20"></i> email:<a>ppay71845@gmail.com</a></li>
-                    </ul>
-                    </div>
-                    <div class="social-icon d-flex mt-4 mb-4 mb-lg-0">
-                        <div class="facebook">
-<!--                            <a href="index.html"><i class="mdi mdi-facebook-box f-30"></i></a>-->
-                           <i class="mdi mdi-facebook-box f-30"></i>
-                        </div>
-                        <div class="twitter ms-4">
-<!--                            <a href="index.html"><i class="mdi mdi-twitter f-30"></i></a>-->
-                            <i class="mdi mdi-twitter f-30"></i>
-                        </div>
-                        <div class="twitter ms-4">
-<!--                            <a href="index.html"><i class="mdi mdi-instagram f-30"></i></a>-->
-                            <i class="mdi mdi-instagram f-30"></i>
-                        </div>
-                        <div class="twitter ms-4">
-<!--                            <a href="index.html"><i class="mdi mdi-linkedin-box f-30"></i></a>-->
-                            <i class="mdi mdi-linkedin-box f-30"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="text-black item">Operation working hours</div>
-                    <ul class="menu list-unstyled mt-3">
-                        <li class="menu-item">Monday to Wednesday: 9am to 4pm</li>
-<li class="menu-item"></li>
-                        <li class="menu-item">Thursday - Friday: 9am-5pm</li>
-<li class="menu-item"></li>
-                        <li class="menu-item">Weekends: rest</li>
-                    </ul>
+                    <p class="f-16 my-4 text-muted">VCC integrates the two major credit card institutions VISA and
+                        Mastercard into a virtual credit card issuance platform; professional positioning,
+                        Provide high-quality services to corporate customers and agency customers; have the most
+                        comprehensive card issuer resources; hold up to 20
+                        Multiple card warehouses; holds global multi-currency settlement; currently holds more than 680
+                        diversified consumption scenarios
+                        ; comprehensively covering e-commerce, advertising, games, entertainment, shopping, film and
+                        television, servers and other consumer fields,
+                        Meet the needs of customers in various consumption scenarios around the world.</p>
+                    <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary"></i>
+                        Contact us</a>
 
                 </div>
-            </div>
-        </div>
-    </section>
-    <div class="bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="copy-right mb-5 text-center text-muted">Copyright &copy; 2024.VCC All rights reserved.</div>
-                    <div class="copy-right mb-3 text-center text-muted" style="font-size: 12px">
-                        Facebook and the Facebook logo are trademarks of Meta Platforms, Inc. registered in the United States and other countries and regions. Google, Google Ads, and the Google logo are trademarks of Google, LLC registered in the United States and other countries and regions. Paypal and the Paypal logo are trademarks of Paypal, Inc. registered in the United States and other countries and regions. VCC solutions may not be suitable for all customers. Terms and conditions apply and are subject to change. Visa is a registered trademark of Visa, U.S.A. Inc. All other trademarks and service marks are the property of their respective owners. Mastercard is a registered trademark, and the circle design is a trademark of Mastercard International Incorporated.
+                <div class="col-lg-6 mt-5">
+                    <div class="animation-image">
+                        <div class="main-image mt-5 mt-lg-0 ms-lg-5 position-relative">
+                            <img src="static/image/banner-card3.png" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-	<script>
+
+</section>
+<section class="section ">
+    <div class="container">
+        <div class="row align-items-center" id="part1">
+            <div class="col-lg-7">
+                <div class="sec-image position-relative " id="sec-image">
+                    <div class="bg-img overflow-hidden border-radius">
+                        <img src="static/image/img3.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
+                <div class="mb-3 item2">core business</div>
+                <div class="text-muted fw-normal"><span class="fw-bold"></span></div>
+                <p class="mt-3"><span class="text-primary fw-normal">√</span>Supports more than 200 well-known merchants
+                    for online payment</p>
+                <p class="mt-3"><span class="text-primary fw-normal">√</span>Facebook ads、Google ads 、Paypal</p>
+                <p class="mt-3"><span class="text-primary fw-normal">√</span>Receive OTP verification, 3D verification
+                </p>
+                <p class="mt-3"><span class="text-primary fw-normal">√</span>Special card supports unlimited refunds</p>
+                <p class="mt-3"><span class="text-primary fw-normal">√</span>Eliminate cumbersome real-name
+                    authentication and complicated processes</p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="section bg-light" id="service">
+    <div class="container">
+        <div class="row justify-content-center mb-4 pb-2">
+            <div class="col-lg-6">
+                <div class="heading text-center">
+                    <div class="mb-3 item2">Our services
+                    </div>
+                    <p class="text-muted para-p mx-auto mb-0">A virtual credit card platform that comprehensively covers
+                        consumption scenarios</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">Cross-border e-commerce</div>
+                    <p style="height:60px;">Shopify ､Amazon ､ebay ､AliExpress ､Taobao</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">advertising traffic</div>
+                    <p style="height:60px;">Facebook Ads ､ Google Ads ､ Instagram Ads ､ Tiktok Ads ､ Telegram Ads</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">Ai</div>
+                    <p style="height:60px;">OpenAI､Claude､ChatBase､Perplexity､Gemini</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">Film and television</div>
+                    <p style="height:60px;">YouTube､Netflix､imdb､disneyplus､kwai-video</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">Travel food</div>
+                    <p style="height:60px;">Airbnb､ Tripadvisor､ Zomato､ Yelp､ </p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 pt-2">
+                <div class="service-box text-center text-lg-start">
+
+                    <div class="fw-bold mt-4 mb-3 item">payment instrument</div>
+                    <p style="height:60px;">PayPal､Alipay､GooglePay､Skrill､Stripe､Payoneer</p>
+                    <div class="button-link mt-2">
+                        <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section ">
+    <div class="container">
+        <div class="row align-items-center" id="part1">
+            <div class="col-lg-7">
+                <div class="sec-image position-relative " id="sec-image">
+                    <div class="bg-img overflow-hidden border-radius">
+                        <img src="static/image/cj3.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 mt-5 mt-lg-0">
+                <div class="mb-3 item2">Global credit card payment solutions for the digital era</div>
+                <div class="text-muted fw-normal"><span class="fw-bold">Customer-centric</span></div>
+                <p class="mt-3">
+                    Our customers are at the heart of everything we do, and we are committed to providing them with
+                    flexible, reliable and secure ways to pay.</p>
+                <div class="text-muted fw-normal"><span class="fw-bold">Innovation and Technology</span></div>
+                <p class="mt-3">We are committed to investing in cutting-edge technology and innovative solutions to
+                    provide our customers with the best payment experience.</p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="section bg-light" id="advantages">
+    <div class="container">
+        <div class="row justify-content-center mb-4 pb-2">
+            <div class="col-lg-6">
+                <div class="heading text-center">
+                    <div class="mb-3 item2">Our advantages
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1101" src="static/image/1101.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">
+                        Transaction security
+                    </div>
+                    <p style="height:60px;">International PCI DSS Certification<br>
+                        Comprehensive customized risk control configuration</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1102" src="static/image/1102.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">
+                        Rich card segments
+                    </div>
+                    <p style="height:60px;">Multiple number segments<br>
+
+                        Meet the needs of various trading scenarios</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1103" src="static/image/1103.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">Efficient card opening</div>
+                    <p style="height:60px;">Open card in seconds<br>
+                        Open multiple tickets at once</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1104" src="static/image/1104.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">Multi-currency card</div>
+                    <p style="height:60px;">USD、HKD、GBP currency card<br>
+
+                        Meet payment needs in specific currencies and reduce exchange losses</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1105" src="static/image/1105.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">Various scenes</div>
+                    <p style="height:60px;">Online multiple scenes<br>
+                        Multi-platform consumption</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1106" src="static/image/1106.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">Technically reliable</div>
+                    <p style="height:60px;">API docking<br>
+                        Service platform card opening</p>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1107" src="static/image/1107.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">Clear reconciliation</div>
+                    <p style="height:60px;">Online unified management of multiple cards<br>
+                        Clear online reconciliation of income and expenditure</p>
+                </div>
+            </div>
+            <div class="col-lg-3 mt-3 pt-2" style="height: 265px;">
+                <div class="service-box text-center text-lg-start">
+                    <div class="service-image">
+                        <img alt="1108" src="static/image/1108.svg" style="width: 50px;">
+                    </div>
+                    <div class="fw-bold mt-4 mb-3 item">Customer consultation</div>
+                    <p style="height:60px;">
+                        All-day service on weekdays<br>
+                        Ensure customers have no worries when using their cards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class=" section" id="cta-ani">
+    <div class="cta-image position-relative">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center">
+                        <div class="mt-3 fw-bold item2">Choose USDT to recharge your account</div>
+                        <div class="text-dark item">
+                            You can use USDT to recharge your account. The cost of this recharge method is very low.
+                            Through our quick response system, the USDT recharge method provides 24-hour recharge
+                            service, and the USDT recharge method can be reached within 3 minutes. your account.
+                        </div>
+
+                        <a href="https://t.me/LKJ118" target="_blank" class=" btn-lg btn-primary mt-4 f-14">Contact
+                            us</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-light" id="pricing">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="text-center">
+                    <div class="mb-3 item2">price</div>
+                    <p class="text-muted para-p mx-auto mb-0">VCC provides comprehensive virtual credit card issuance
+                        and management services designed to drive your global business growth. Not only do we provide a
+                        full suite of functional services, we also offer competitive pricing in the industry. The fees
+                        below are calculated based on your consumption; the higher your consumption, the lower the
+                        fees.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-4  mt-5">
+                <div class="pricing-box box-shadow p-4 border-radius">
+                    <div class="text-center mb-4">
+                        <div class="text-primary">
+                            Cumulative monthly consumption of US$3,000-10,000
+                        </div>
+                        <div class="price-title mt-2">
+                            <div class="tag"></div>
+                            <div class="mb-0 text-white">Card issuance fee</div>
+                        </div>
+                        <div class="price-tag mt-4">
+                            <h2><sup>$</sup><span class="text-primary">2.5</span></h2>
+                        </div>
+                        <div class="detail mt-4">
+                            <p><span class="text-primary icon me-2">∎</span>Monthly/Annual Fee: $0</p>
+                            <p><span class="text-primary icon me-2">∎</span>Recharge fee: 4.5% USD</p>
+                            <p><span class="text-primary icon me-2">∎</span>Single transaction limit: US$50,000</p>
+                            <p><span class="text-primary icon me-2">∎</span>Annual spending limit: US$200,000</p>
+                            <p><span class="text-primary icon me-2">∎</span>Card validity: 2-3 years</p>
+                        </div>
+
+                    </div>
+                    <a href="https://t.me/LKJ118" target="_blank"
+                       class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">Start now</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-5">
+                <div class="pricing-box box-shadow p-4 border-radius">
+                    <div class="text-center mb-4">
+                        <div class="text-primary">
+                            Cumulative monthly consumption of US$10,000-50,000
+                        </div>
+                        <div class="price-title mt-2">
+                            <div class="tag"></div>
+                            <div class="mb-0 text-white">Card issuance fee</div>
+                        </div>
+                        <div class="price-tag mt-4">
+                            <h2><sup>$</sup><span class="text-primary">2</span></h2>
+                        </div>
+
+                        <div class="detail mt-4">
+                            <p><span class="text-primary icon me-2">∎</span>Monthly/Annual Fee: $0</p>
+                            <p><span class="text-primary icon me-2">∎</span>Recharge fee: 4% USD</p>
+                            <p><span class="text-primary icon me-2">∎</span>Single transaction limit: US$50,000</p>
+                            <p><span class="text-primary icon me-2">∎</span>Annual spending limit: US$200,000</p>
+                            <p><span class="text-primary icon me-2">∎</span>Card validity: 2-3 years</p>
+                        </div>
+
+                    </div>
+                    <a href="https://t.me/LKJ118" target="_blank"
+                       class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">Start now</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-5">
+                <div class="pricing-box box-shadow p-4 border-radius">
+                    <div class="text-center mb-4">
+                        <div class="text-primary">
+                            Cumulative monthly consumption of US$50,000-100,000
+                        </div>
+                        <div class="price-title mt-2">
+                            <div class="tag"></div>
+                            <div class="mb-0 text-white">Card issuance fee</div>
+                        </div>
+                        <div class="price-tag mt-4">
+                            <h2><sup>$</sup><span class="text-primary">1.7</span></h2>
+                        </div>
+
+                        <div class="detail mt-4">
+                            <p><span class="text-primary icon me-2">∎</span>Monthly/Annual Fee: $0</p>
+                            <p><span class="text-primary icon me-2">∎</span>Recharge fee: 3% USD</p>
+                            <p><span class="text-primary icon me-2">∎</span>Single transaction limit: US$50,000</p>
+                            <p><span class="text-primary icon me-2">∎</span>Annual spending limit: US$200,000</p>
+                            <p><span class="text-primary icon me-2">∎</span>Card validity: 2-3 years</p>
+                        </div>
+
+                    </div>
+                    <a href="https://t.me/LKJ118" target="_blank"
+                       class="btn btn-primary rounded-pill position-absolute start-50 translate-middle-x">Start now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section faq" id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box text-center">
+                    <div class="mb-3 item2">FAQ</div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6">
+                <div class="accordion mt-5" id="accordionExample">
+                    <div class="faq-collaps faq-collaps-2">
+                        <div class="card mt-4">
+                            <a data-bs-toggle="collapse" href="#collapse1" class="faq collapsed">
+                                <div class="card-header p-4" id="heading1">
+                                    <div class="mb-0 text-dark item">What is a virtual card?</div>
+                                </div>
+                            </a>
+                            <div id="collapse1" class="collapse show" aria-labelledby="heading1"
+                                 data-parent="#accordionExample">
+                                <div class="card-body pt-1">
+                                    <p class="mb-0 text-muted">A virtual card is a digital card that can be used for
+                                        online transactions. This is a safe and convenient way to pay without the need
+                                        for a physical card.
+                                        .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-4">
+                            <a data-bs-toggle="collapse" href="#collapse2" class="faq collapsed">
+                                <div class="card-header p-4" id="heading2">
+                                    <div class="mb-0 text-dark item">What currencies do you support?</div>
+                                </div>
+                            </a>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2"
+                                 data-parent="#accordionExample">
+                                <div class="card-body pt-1">
+                                    <p class="mb-0 text-muted">We support multiple currencies including USD, EUR, GBP
+                                        and JPY. We are constantly expanding the list of supported currencies to better
+                                        meet the needs of our customers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-4">
+                            <a data-bs-toggle="collapse" href="#collapse3" class="faq collapsed">
+                                <div class="card-header p-4" id="heading3">
+                                    <div class="mb-0 text-dark item">How to apply for a virtual card？</div>
+                                </div>
+                            </a>
+                            <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                                 data-parent="#accordionExample">
+                                <div class="card-body pt-1">
+                                    <p class="mb-0 text-muted">You can apply for a virtual card online through our
+                                        website. The application process is quick and easy, and you'll receive your card
+                                        details immediately upon approval.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-4">
+                            <a data-bs-toggle="collapse" href="#collapse4" class="faq collapsed" aria-expanded="false"
+                               aria-controls="collapse4">
+                                <div class="card-header p-4" id="heading4">
+                                    <div class="mb-0 text-dark item">How to fund my account？</div>
+                                </div>
+                            </a>
+                            <div id="collapse4" class="collapse" aria-labelledby="heading4"
+                                 data-parent="#accordionExample">
+                                <div class="card-body pt-1">
+                                    <p class="mb-0 text-muted">You can fund your account using a variety of methods,
+                                        including bank transfer, credit card, and debit card. We support multiple
+                                        currencies so you can choose the one that best suits your needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="static/picture/Questions2.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="cta section" id="about">
+    <div class="cta-image position-relative">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center">
+                        <div class="mt-3 fw-bold item2">about Us</div>
+                        <div class="text-dark item" style="line-height: 1.9;">&nbsp;&nbsp;&nbsp;&nbsp;VCC is a leading
+                            virtual credit card issuance platform; a virtual card service launched in cooperation with
+                            international card issuers; it is committed to providing safe, efficient and convenient
+                            payment solutions for businesses and individuals. We focus on leveraging the most advanced
+                            technology integration technology; non-traditional payment methods; helping users obtain a
+                            seamless payment experience in the digital economy era. Committed to innovative integration
+                            technology; providing safer and more efficient payment solutions; assisting users in digital
+                            economy. In the economic era, payment freedom is easily achieved. VCC will continue to
+                            pursue excellence; constantly optimize products and services; and become a trustworthy
+                            payment partner for users.</span> </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    <section id="subscribe" class="section cta-2">-->
+<!--        <div class="cta-image position-relative " id="cta-footer">-->
+<!--            <div class="container">-->
+<!--                <div class="row justify-content-center">-->
+<!--                    <div class="col-lg-10">-->
+<!--                        <div class="text-center">-->
+<!--                            <div class="fw-bold item2">Easily enable global payments using VCC</span>-->
+<!--                            </div>-->
+
+<!--                            <div class="row justify-content-center">-->
+<!--                                <div class="col-lg-8">-->
+<!--                                    <form class="subscribe-form mt-4" action="#">-->
+<!--                                        <div class="input-group justify-content-center">-->
+<!--                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">-->
+<!--                                            <a href="https://t.me/LKJ118" target="_blank" class="btn btn-primary" type="button" id="subscribebtn" style="padding: 20px 30px;">subscription</a>-->
+<!--                                        </div>-->
+<!--                                        <p class="f-14 mt-2">After the email subscription is successful, the latest event news will be notified by email.</p>-->
+<!--                                    </form>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<section class="footer py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="address-content">
+                    <div class="text-black item">Dita Blancat LLC</div>
+                    <ul class="menu list-unstyled mt-3">
+                        <li class="menu-item"><i class="mdi mdi-telegram f-20"></i> telegram:<a
+                                href="https://t.me/LKJ118">@LKJ118</a></li>
+                        <li class="menu-item"></li>
+                        <li class="menu-item"><i class="mdi mdi-telegram f-20"></i> telegrambot:<a
+                                href="https://t.me/LKJ11888_bot">@LKJ11888_bot</a></li>
+                        <li class="menu-item"></li>
+                        <li class="menu-item"><i class="mdi mdi-email f-20"></i> email:<a>ppay71845@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="social-icon d-flex mt-4 mb-4 mb-lg-0">
+                    <div class="facebook">
+                        <!--                            <a href="index.html"><i class="mdi mdi-facebook-box f-30"></i></a>-->
+                        <i class="mdi mdi-facebook-box f-30"></i>
+                    </div>
+                    <div class="twitter ms-4">
+                        <!--                            <a href="index.html"><i class="mdi mdi-twitter f-30"></i></a>-->
+                        <i class="mdi mdi-twitter f-30"></i>
+                    </div>
+                    <div class="twitter ms-4">
+                        <!--                            <a href="index.html"><i class="mdi mdi-instagram f-30"></i></a>-->
+                        <i class="mdi mdi-instagram f-30"></i>
+                    </div>
+                    <div class="twitter ms-4">
+                        <!--                            <a href="index.html"><i class="mdi mdi-linkedin-box f-30"></i></a>-->
+                        <i class="mdi mdi-linkedin-box f-30"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-black item">Operation working hours</div>
+                <ul class="menu list-unstyled mt-3">
+                    <li class="menu-item">Monday to Wednesday: 9am to 4pm</li>
+                    <li class="menu-item"></li>
+                    <li class="menu-item">Thursday - Friday: 9am-5pm</li>
+                    <li class="menu-item"></li>
+                    <li class="menu-item">Weekends: rest</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="copy-right mb-3 text-center text-muted">
+                    <span style="margin-right: 30px;color: #8C89A2;cursor: pointer" onclick="openModal2()">Service Agreement</span>
+                    <span style="color: #8C89A2">|</span> <span
+                        style="margin-left: 30px;color: #8C89A2;cursor: pointer" onclick="openModal()">Privacy Policy</span>
+                </div>
+                <div class="copy-right mb-5 text-center text-muted">Copyright &copy; 2024.VCC All rights reserved.</div>
+                <div class="copy-right mb-3 text-center text-muted" style="font-size: 12px">
+                    Facebook and the Facebook logo are trademarks of Meta Platforms, Inc. registered in the United
+                    States and other countries and regions. Google, Google Ads, and the Google logo are trademarks of
+                    Google, LLC registered in the United States and other countries and regions. Paypal and the Paypal
+                    logo are trademarks of Paypal, Inc. registered in the United States and other countries and regions.
+                    VCC solutions may not be suitable for all customers. Terms and conditions apply and are subject to
+                    change. Visa is a registered trademark of Visa, U.S.A. Inc. All other trademarks and service marks
+                    are the property of their respective owners. Mastercard is a registered trademark, and the circle
+                    design is a trademark of Mastercard International Incorporated.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 弹窗遮罩层 -->
+<div id="modal" class="modal-overlay" onclick="closeModal()">
+    <!-- 弹窗内容 -->
+    <div class="modal-content2">
+        <div class="text-center">
+            <h2>Privacy Policy</h2>
+        </div>
+        <p>Foreword</p>
+        <p>
+            VCC International Credit Card (hereinafter referred to as "the Platform" or "We") values the protection of personal information of customers (hereinafter referred to as "you") and is committed to always implementing the privacy policy. When you use the services of this platform, we may collect, store, use and share your relevant personal information. Through this policy, we explain to you how we collect, store, use and share this information, and how we provide you with access, update, control and protection of this information. This Privacy Policy applies to your access to and use of the products and services of the Platform through VCC International Credit cards. </p>
+        <p>
+            Please read this Privacy Policy carefully before checking "Agree" to ensure that you are fully aware of and fully understand its contents and the corresponding legal consequences. If you click or check "Agree", you will be deemed to accept this privacy Policy, and the Platform will legally use and protect your personal information in accordance with relevant laws and regulations and this policy.
+        </p>
+        <p>This Privacy Policy will help you understand the following:</p>
+        <ul>
+            <li> 1. How the Platform collects and uses your personal information;</li>
+            <li> 2. How the Platform uses cookies and similar technologies;</li>
+            <li>3. How the platform entrusts, shares, transfers and publicly discloses your personal information;</li>
+            <li> 4. How the Platform stores and protects your personal information;</li>
+            <li> 5. Your rights;</li>
+            <li> 6. Statement of liability to third parties;</li>
+            <li> 7. Protection of minors' personal information;</li>
+            <li> 8. How to update this Privacy Policy;</li>
+            <li> 9. How to contact the Platform.</li>
+        </ul>
+
+        <p>1. How does the Platform collect and use your personal information</p>
+        <p>Personal information
+            Information that alone or in combination with other information can identify you or reflect your activities, including but not limited to your name, date of birth, ID number, biometric information, contact information, address, account information, transaction records, credit information, consumption preferences, whereabouts, education and work information.</p>
+        <ul>
+            <li>1.
+                Login and verification information: When you log in and register VCC International credit card, the platform needs to collect your SMS verification code, IP address, device information, etc., for identity verification, to ensure your normal use of our services.
+            </li>
+            <li>2.
+                Account opening information: When opening an account, the platform will apply to you for microphone, camera, photo album access, and collect your ID photo, four-element information and video data for identity verification and KYC (Know your Customer) verification.
+            </li>
+            <li>3.
+                Transaction information: When the VCC International credit card website processes transactions, the platform will collect registered account numbers, passwords, verification codes, etc., for verifying the validity of transactions, and collect your transaction records for inquiry.
+            </li>
+        </ul>
+
+        <p>2. How does the Platform use cookies and similar technologies</p>
+        <ul>
+            <li>1.
+                Cookies: In order to ensure the normal operation of the website, the Platform stores small data files (cookies) on your device to record your preferences and usage data. You may clear or block cookies, but this may affect the use of some of your services.
+            </li>
+            <li>2. Do Not Track: If your browser has the Do Not Track request enabled, the platform will respect your choice.</li>
+        </ul>
+
+        <p>3. How does the Platform entrust, share, transfer and publicly disclose your personal information</p>
+        <ul>
+            <li>1.
+                Sharing: When necessary for the business, the platform may share your necessary information with affiliated parties. If you need to change the purpose of processing, the platform will ask for your consent again.
+            </li>
+            <li>2. Transfer: In the event of a merger, acquisition or asset transfer involving the transfer of personal information, the platform will notify you and re-obtain your consent if there is a major change.</li>
+            <li>3. Public disclosure: The platform will not publicly disclose your information, unless authorized by you, or in accordance with laws and regulations to make public disclosure.</li>
+            <li>4.
+                Exceptions: According to laws and regulations, the platform may collect usage information without seeking your consent in certain circumstances such as fulfilling legal obligations, carrying out criminal investigations or safeguarding major interests.
+            </li>
+        </ul>
+
+        <p>4. How does the Platform store and protect your personal information</p>
+        <ul>
+            <li>1. Storage: The Platform will store your information securely for the shortest period necessary to meet the policies or services.</li>
+            <li>2.
+                Protection Measures: The platform adopts industry-standard technical and management measures to prevent information loss, tampering or disclosure. For example, the use of encryption technology, private line transmission and access control mechanisms.
+            </li>
+        </ul>
+
+        <p>5. Your Rights</p>
+        <ul>
+            <li>1. Access: The right to access your personal information.</li>
+            <li>2. Correction: The right to request updates and corrections when information is incorrect.</li>
+            <li>3. Deletion: Request deletion of personal information where permitted by law.</li>
+            <li>4. Withdrawal of consent: You may withdraw your authorized consent at any time.</li>
+        </ul>
+
+        <p>6. Liability Statement to third parties</p>
+        <p>
+            In the course of using the Platform, third parties may collect information about you through cookies or other plug-ins. The privacy policies of these third parties are not controlled by the Platform, and the platform recommends that you review and confirm their privacy policies.</p>
+
+        <p>7.Protection of minors' personal information</p>
+        <p>
+            The platform attaches great importance to the protection of minors' information, and it is recommended that parents or guardians guide minors to use the platform services. Minors need to obtain the guardian's consent before providing information, and the guardian has the right to contact the platform to understand or delete relevant information.</p>
+
+        <p>8. How to update this Privacy Policy</p>
+        <p>
+            The Platform may revise this policy due to business changes, changes in laws and regulations, etc. The revised policy will inform you by push notification, pop-up window, etc. Significant changes will be provided. You can choose whether to continue licensing.</p>
+
+        <p>9. How to contact the Platform</p>
+        <p>If you have any questions about this Privacy Policy or need further assistance, please contact this platform at ppay71845@gmail.com</p>
+        <p>Please check the contents of this privacy policy and let us know if you need to make further adjustments or add specific terms!</p>
+        <div class="text-center">
+            <button class="close-btn " onclick="closeModal()">Close</button>
+        </div>
+    </div>
+</div>
+
+<!-- 弹窗遮罩层 -->
+<div id="modal2" class="modal-overlay" onclick="closeModal2()">
+    <!-- 弹窗内容 -->
+    <div class="modal-content2">
+        <div class="text-center">
+            <h2>Service Agreement</h2>
+        </div>
+        <p>VCC International credit card web version service usage agreement</p>
+        <p>
+            This agreement is a valid agreement between VCC International Credit Card and you in connection with the use of the VCC International Credit Card Web Version Service (hereinafter referred to as the "Service"). By logging in to VCC International Credit Card website version, you acknowledge, understand and agree to accept all contents of this Agreement, and confirm to bear all legal consequences arising therefrom.</p>
+        <p>
+            Before confirming your acceptance of this Agreement, please be sure to carefully read and fully understand the entire contents of this Agreement, especially the terms of exemption or limitation of liability. If there is any content you do not agree with or do not understand the meaning of the relevant terms, please do not perform subsequent operations.</p>
+        <p>1.Declarations and commitments</p>
+        <ul>
+            <li> 1.
+                You agree and understand that VCC has the right to upgrade, adjust or transform the system, functions, contents and methods of the Service at any time according to the needs of business development, in order to improve the quality of service.
+            </li>
+            <li> 2.
+                If the VCC International Credit Card changes the terms of this Agreement due to system upgrades, business development or legal and regulatory changes, you can review the terms in the latest version. If you continue to use the Service, it is deemed that you have fully read, understood and accepted the revised Agreement; Otherwise, stop using it.
+            </li>
+            <li> 3.
+                When dealing with your banking business, VCC International Credit Card will inquire, verify or provide your information to legally established credit bureaus and other legal institutions as necessary, and guarantee the confidentiality of your information.
+            </li>
+            <li>4.
+                You understand and authorize that in order to ensure the security of the Services, VCC International Credit Card will use your device resources and collect, store and use personal information and device information, such as device model, IP address, etc. as necessary to ensure the security of your transactions.
+            </li>
+        </ul>
+        <p>2. Cost and closure</p>
+        <ul>
+            <li> 1.
+                When you use the VCC International Credit Card Web version, you will be charged according to the service price announced by VCC International Credit Card. If the fee standard changes, you have the right to choose whether to continue to use the Service; If you do not accept the new announcement content, you can apply for change or termination of the service, otherwise it is deemed to accept the adjusted content.
+            </li>
+            <li> 2.
+                You have the right to turn off the VCC International Credit Card web service at any time; If the shutdown is complete, the service is terminated. If you breach the agreement, VCC International Credit Card reserves the right to unilaterally suspend or terminate the service, and reserves the right to pursue liability.
+            </li>
+        </ul>
+        <p>3. Rules of use</p>
+        <ul>
+            <li> 1. You voluntarily use the VCC International Credit Card Web Page and are subject to the rules, regulations and agreements related to the business offered by VCC International Credit Cards.</li>
+            <li> 2.
+                You can access the web version of the service directly from the official VCC International Credit Card website or other legally authorized channels. You will be solely responsible for any consequences resulting from the use of unauthorized programs or third-party applications to access the Web Version of the Service.
+            </li>
+            <li> 3.
+                VCC International Credit Card is not responsible for service interruption, transaction delay or inability to complete due to uncontrollable factors such as network, communication or equipment failure during use. You can try the operation again after the fault disappears, or do it through other self-service channels.
+            </li>
+            <li> 4.
+                In order to ensure the security of transactions, you need to properly keep your account, password and other important information, and all operations are deemed to be your own operations and bear the corresponding responsibility. Any loss of relevant information will be at your own risk or financial loss.
+            </li>
+            <li> 5.
+                When you use VCC International credit card services, you must provide true, legal and complete data. If the data is inaccurate or not updated in a timely manner, VCC International Card reserves the right to refuse, suspend or terminate the service at your own risk.
+            </li>
+        </ul>
+        <p>4. personal information and privacy protection</p>
+        <ul>
+            <li> 1.
+                In order to provide you with better services, VCC International Credit Card will collect, transmit, analyze and store your personal information as required, and is committed to ensuring your privacy security through professional technical means. Except with your express consent or as required by law, VCC International Credit Cards will not disclose your information to third parties.
+            </li>
+            <li>2.
+                If authorized by you, VCC International Credit Cards may provide relevant information to legally established credit bureaus and other partner institutions during the processing of banking transactions to ensure the legal compliance of the services. All partner organizations are required to maintain the confidentiality of your information.
+            </li>
+            <li> 3. After obtaining your authorization, VCC International Credit Card may collect your device information, such as device model, IP address, geographical location, etc., to improve the security of your transactions.
+            </li>
+        </ul>
+        <p>5. Prohibitions and compliance</p>
+        <ul>
+            <li> 1.
+                When using the Service, you shall not engage in any illegal or irregular activities. Such as money laundering, fraud and other acts, once discovered or reasonably suspected, VCC International card has the right to immediately suspend, stop the service or take other risk control measures.
+            </li>
+            <li> 2. You agree that VCC International Credit Card may adopt legal and compliant security measures to protect your information and transactions.</li>
+        </ul>
+        <p>6. Dispute Resolution and application of law</p>
+        <ul>
+            <li> 1.
+                In case of any dispute between you and VCC International Credit Card due to this Agreement, both parties shall settle the dispute through negotiation. If the negotiation fails, a lawsuit may be filed with the local court where the headquarters of VCC International Credit Card is located.
+            </li>
+            <li>2. The conclusion, validity, performance, interpretation and dispute resolution of this Agreement shall be governed by the local laws and regulations of VCC International Credit Card.</li>
+            <li>3. The invalidity or unenforceability of any provision of this Agreement shall not affect the validity of the other provisions.</li>
+            <li>4. Matters not mentioned in the agreement will be implemented in accordance with laws and regulations and VCC international credit card related business rules.</li>
+        </ul>
+
+        <p>Please check whether this agreement meets your business needs. If you need to further modify or add specific terms, please let us know!</p>
+
+        <div class="text-center">
+            <button class="close-btn " onclick="closeModal2()">Close</button>
+        </div>
+    </div>
+</div>
+<script>
     function toggleClass(event) {
         const navbar = document.getElementById('navbarCollapse');
         if (navbar.classList.contains('show')) {
@@ -626,12 +893,32 @@ Cumulative monthly consumption of US$50,000-100,000</div>
             navbar.classList.add('show');
         }
     }
+
+    // 打开弹窗
+    function openModal() {
+        document.getElementById("modal").classList.add("show");
+    }
+
+    // 关闭弹窗
+    function closeModal() {
+        document.getElementById("modal").classList.remove("show");
+    }
+
+    // 打开弹窗
+    function openModal2() {
+        document.getElementById("modal2").classList.add("show");
+    }
+
+    // 关闭弹窗
+    function closeModal2() {
+        document.getElementById("modal2").classList.remove("show");
+    }
 </script>
-    <script src="static/js/bootstrap.bundle.min.js"></script>
-    <script src="static/js/tiny-slider.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/tiny-slider.js"></script>
 <!--    <script src="static/js/swiper.min.js"></script>-->
-    <script src="static/js/counter.init.js"></script>
-    <script src="static/js/app.js"></script>
+<script src="static/js/counter.init.js"></script>
+<script src="static/js/app.js"></script>
 </body>
 
 </html>
@@ -642,9 +929,50 @@ Cumulative monthly consumption of US$50,000-100,000</div>
         font-size: 20px;
 
     }
+
     .item2 {
         font-size: 32px;
 
+    }
+
+
+    /* 弹窗遮罩层 */
+    .modal-overlay {
+        display: none; /* 默认隐藏 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 弹窗内容 */
+    .modal-content2 {
+        background-color: #fff;
+        padding: 20px;
+        width: 600px;
+        max-height: 600px; /* 固定最大高度 */
+        border-radius: 8px;
+        overflow-y: auto; /* 启用垂直滚动条 */
+    }
+
+    /* 显示弹窗的样式 */
+    .modal-overlay.show {
+        display: flex;
+    }
+
+    /* 关闭按钮 */
+    .close-btn {
+        margin-top: 10px;
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
     }
 
 </style>
